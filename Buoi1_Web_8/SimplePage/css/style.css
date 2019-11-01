@@ -1,0 +1,14 @@
+img {
+    border-radius: 50%;
+}
+#imgcontainer {
+    text-align: center;
+    display: block;
+}
+
+.myimg {
+    border: 5px solid tomato;
+}
+#container{
+    background-color: aquamarine;
+}
