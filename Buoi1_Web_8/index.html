@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=720, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Tạo 1 REST API phục vụ cho mục đích học tập trong 30 giây</h1>
+        <p>29 tháng 10, 2019</p>
+        <p>
+            Bài hướng dẫn dành cho các Frontend Developer hoặc Mobile Developer (có thể gọi chung là Client Developer
+            😂).
+        </p>
+        <h3>Dựng Server local</h3>
+        <ul>
+            <li>Yêu cầu máy tính đã cài và chạy được Git + NodeJS.</li>
+            <li>Các bước thực hiện:</li>
+            <ol>
+                <li>
+                    Clone repository sau: https://github.com/robinhuy/fake-rest-api-nodejs.git
+                </li>
+                <li>Cài đặt dependencies</li>
+                <li>Chạy server</li>
+            </ol>
+        </ul>
+        <p>
+            - Vậy là chúng ta đã có 1 Server API chạy trên http://localhost:3000 với 1 resource có sẵn là /users (100
+            record) với các API theo chuẩn REST: Lấy danh sách user (phân trang, lọc, tìm kiếm, ...), lấy thông tin 1
+            user,
+            thêm sửa xóa user.
+        </p>
+        <h3>Chỉnh sửa API</h1>
+            <ul>
+                <li>API mặc định là thông tin về User, toàn bộ được lưu vào trong file database.json. Có thể chỉnh sửa
+                    hoặc
+                    thêm dữ liệu vào file đó miễn khai báo đúng cấu trúc, ví dụ thêm 1 resource về products thì thêm như
+                    sau:
+                </li>
+                <li>Server sử dụng thư viện JSON Server, để xem đầy đủ tài liệu hướng dẫn về API hãy xem tại đây:
+                    https://github.com/typicode/json-server
+                </li>
+                <li>Nếu cần mockup dữ liệu lớn và ngẫu nhiên thì có thể dùng thêm dịch vụ sau https://mockaroo.com/.
+                    Mockaroo cho phép mockup dữ liệu rất đa dạng, cấu hình được tỉ lệ, viết thêm các function điều kiện
+                    để
+                    tạo dữ liệu và cho phép xuất mockup ra
+                    dưới nhiều định dạng trong đó có JSON.</li>
+
+            </ul>
+            <h3>Dựng server online</h1>
+                <ul>
+                    <li>Nếu là đại gia thì có thể sử dụng VPS hoặc nếu không thì có thể sử dụng dịch vụ của Heroku (hoặc
+                        các
+                        dịch vụ tương tự): Đăng ký tài khoản, tạo App và đẩy source code kèm file database.json lên. Khi
+                        deploy code có thể chọn Heroku Git và
+                        gõ lệnh theo hướng dẫn bên dưới hoặc chọn kết nối với Github repo để deploy code qua 1 nút bấm
+                        (hoặc
+                        auto deploy khi có commit lên github).</li>
+                    <li>Cần chú ý là nếu dùng gói Free thì khi Server không hoạt động (không có truy cập) sau 30 phút
+                        thì
+                        Server sẽ rơi vào trạng thái Sleep, lần truy cập kế tiếp sẽ hơi chậm 1 chút và mọi dữ liệu sẽ
+                        reset
+                        về ban đầu (như trong file database.json).</li>
+                </ul>
+                <p>=> Nếu dùng Heroku để host thì có thể chọc phá API thoải mái 😄</p>
+                <a href="http://vnexpress.net" target="_blank"></a>
+                <div id="imgcontainer">
+                    <img class="myimg" width="30%"
+                        src="https://images.pexels.com/photos/2546945/pexels-photo-2546945.jpeg?cs=srgb&dl=animal-animal-photography-antlers-2546945.jpg&fm=jpg"
+                        alt="Deer image" title="Ảnh hươu">
+                </div>
+    </div>
+</body>
+
+</html>
