@@ -1,0 +1,66 @@
+#container {
+  max-width: 1000px;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+#header {
+  background-color: aliceblue;
+  position: relative;
+}
+
+.menu ul li {
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+}
+
+#logo {
+  float: left;
+}
+
+#logotext {
+  float: right;
+}
+
+.logotext {
+  position: absolute;
+  top: 0;
+  left: 50%;
+}
+
+.menu ul li:hover a {
+  /* background-color: tomato; */
+  padding: 8px 16px;
+  border-bottom: 2px solid brown;
+}
+
+.clear {
+  clear: both;
+}
+
+.proditem {
+  padding: 10px;
+}
+
+.proditem::after {
+  content: " (DISCOUNT)";
+}
+
+.shopping {
+  background-color: tomato;
+  max-width: 100px;
+  height: 30px;
+}
+.productbutton a {
+  padding: 5px 8px;
+  text-decoration: none;
+}
+
+.productbutton:hover a {
+  background-color: aquamarine;
+  padding: 5px 8px;
+}
