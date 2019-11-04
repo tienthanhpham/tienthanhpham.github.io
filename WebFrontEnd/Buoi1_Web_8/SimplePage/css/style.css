@@ -1,14 +1,16 @@
-img {
-    border-radius: 50%;
-}
-#imgcontainer {
-    text-align: center;
-    display: block;
+#body-container{
+    width: 100%;      
+    margin: 0px auto;   /*Canh giữa màn hình*/
+    text-align: center; /*Text bên trong canh giữa*/
+    font-size: 20px;    /*Font chữ 30px*/
+    color: #FFF;        /*Font màu trắng*/
 }
 
-.myimg {
-    border: 5px solid tomato;
+#logoimg {
+    border-radius: 50%;
+	float: left;
 }
-#container{
-    background-color: aquamarine;
+
+.clear {
+	clear:both;
 }
