@@ -1,0 +1,25 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+    background-color: aquamarine;
+}
+
+.title {
+    text-align: center;
+    font-weight: bold;
+}
+
+.end {
+    float: left;
+    font-weight: bold;
+}
+
+p {
+    text-align: justify;
+}
+
+.signup {
+    float: right;
+    text-align: center;
+    font-weight: bold;
+}
