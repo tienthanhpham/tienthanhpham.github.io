@@ -1,0 +1,133 @@
+* {
+  font-family: "Oswald", sans-serif;
+  box-sizing: border-box;
+}
+
+.banner {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.cart {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+}
+
+.logocontain {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  width: 100%;
+  height: 100%;
+  gap: 5px;
+}
+
+.header {
+  width: 100%;
+  height: 100%;
+  grid-column: 1/3;
+  grid-row: 1/2;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  width: 100%;
+  border-top: solid 1px white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.menu:after {
+  clear: both;
+}
+
+.menuitem {
+  display: flex;
+  flex-direction: row;
+  flex: 80;
+  justify-content: flex-start;
+  margin-top: 0;
+  margin-bottom: 0 !important;
+}
+
+.menuli {
+  list-style-type: none;
+  border-left: solid 1px white;
+  border-right: solid 1px white;
+  padding-right: 1em;
+  padding-left: 1em;
+}
+
+.menuli a {
+  text-decoration: none;
+  color: white;
+}
+
+.search {
+  display: flex;
+  flex-direction: row;
+  flex: 20;
+  align-items: center;
+}
+
+.searchicon {
+  font-size: 1em;
+  margin-left: 2%;
+  display: flex;
+  flex: 20;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+}
+
+.searchtext {
+  display: flex;
+  flex: 80;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+  transition: all 1s;
+}
+
+.search:hover .searchtext {
+  z-index: 0;
+  transform: translate(15%);
+}
+
+.search:hover .searchicon {
+  color: black;
+  z-index: 1;
+}
+
+.content {
+  grid-column: 1/1;
+  display: flex;
+  flex-direction: row;
+}
+
+.sidemenu {
+  flex: 20;
+}
+
+.product {
+  flex: 80;
+}
