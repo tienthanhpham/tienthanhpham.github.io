@@ -57,6 +57,10 @@ body {
 }
 
 .extension {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
   flex: 3;
   opacity: 0;
 }
@@ -66,10 +70,9 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 5%;
-  width: 100%;
 }
 
-.songicon > .image > img {
+.songicon img {
   width: 100%;
   border-radius: 5%;
 }
@@ -87,9 +90,17 @@ body {
   font-size: 1em;
 }
 
+.songname a {
+  text-decoration: none;
+}
+
 .singer {
   font-size: 0.8em;
   opacity: 0.8;
+}
+
+.singer a {
+  text-decoration: none;
 }
 
 .overlay {
@@ -139,4 +150,8 @@ body {
 
 .song:hover .extension {
   opacity: 1;
+}
+
+.extension a {
+  text-decoration: none;
 }
