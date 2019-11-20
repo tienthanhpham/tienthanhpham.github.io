@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 90%;
+  padding: 1%;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.newsong > h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.songlist {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0.5em;
+}
+
+.song {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 0.5em;
+}
+
+.songicon {
+  flex: 1;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-right: 0.5em;
+}
+
+.songdetail {
+  flex: 4;
+}
+
+.extension {
+  flex: 3;
+  opacity: 0;
+}
+
+.songicon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5%;
+  width: 100%;
+}
+
+.songicon > .image > img {
+  width: 100%;
+  border-radius: 5%;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5%;
+  width: 100%;
+}
+
+.songname {
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.singer {
+  font-size: 0.8em;
+  opacity: 0.8;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  z-index: 2;
+  background-color: black;
+  border-radius: 5%;
+  opacity: 0;
+}
+
+.play {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.far {
+  color: white;
+  font-size: 200%;
+  opacity: 0;
+}
+
+.song:hover {
+  background-color: lightgrey;
+  opacity: 0.5;
+}
+
+.song:hover .overlay {
+  opacity: 0.8;
+}
+
+.song:hover .far {
+  opacity: 1;
+}
+
+.song:hover .extension {
+  opacity: 1;
+}
