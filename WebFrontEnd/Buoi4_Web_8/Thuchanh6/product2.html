@@ -4,61 +4,151 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=720, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>Product</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Home</title>
   </head>
   <body>
-    <div id="container">
+    <div class="facebook">
+      <a href="http://facebook.com"><i class="fab fa-facebook"></i></a>
+      <a href="http://twitter.com"><i class="fab fa-twitter"></i></a>
+    </div>
+    <div class="container">
       <!--Container for whole page-->
-      <div id="header">
+      <div class="header">
         <!--Header includes Banner & Navbar-->
         <div class="banner">
           <!--Banner includes Logo img & Logo text-->
-          <img
-            id="logo"
-            src="https://thuhuongbanhtrungthu.vn/wp-content/uploads/2018/04/THB-color.png"
-            alt="logo"
-            width="20%"
-          />
-          <div class="logotext">
-            <h1 id="logotext">BÁNH TRUNG THU</h1>
+          <div class="logocontain">
+            <img class="logo" src="./img/logo_2x.png" alt="logo" />
+          </div>
+
+          <div class="cart">
+            <i class="fas fa-shopping-cart"></i>
           </div>
         </div>
-        <div class="clear"></div>
-        <nav class="menu">
+        <div class="menu">
           <!--Navbar includes menu-->
-          <a href="index.html">Home</a>
-          <a href="#">About us</a>
-          <a href="#">Product</a>
-          <a href="#">Blog</a>
-        </nav>
+          <ul class="menuitem">
+            <li class="menuli home">
+              <a href="index.html">TRANG CHỦ</a>
+            </li>
+            <li class=" menuli cakemenu">
+              <a href="#">BÁNH NGỌT VÀ BÁNH MỲ</a>
+            </li>
+
+            <li class="menuli news">
+              <a href="#">TIN TỨC VÀ KHUYẾN MẠI</a>
+            </li>
+            <li class="menuli contact">
+              <a href="#">LIÊN HỆ</a>
+            </li>
+            <li class="menuli recruit">
+              <a href="#">TUYỂN DỤNG</a>
+            </li>
+          </ul>
+          <div class="search">
+            <input
+              type="text"
+              class="searchtext"
+              placeholder="Nhập từ khoá ..."
+            />
+            <div class="searchicon"><i class="fas fa-search"></i></div>
+          </div>
+        </div>
       </div>
-      <div id="content">
-        <!--Whole content of page-->
-        <div class="sidebar"></div>
-        <div class="product" id="prod2">
-          <img
-            class="proditem detail"
-            id="prod2img"
-            src="https://thuhuongbanhtrungthu.vn/wp-content/uploads/2019/07/BlueStars-full.jpg"
-            alt="prod2img"
-          />
-          <h3 class="proditem">BÁNH DẠ NGUYỆT</h3>
-          <p class="proditem">
-            Cứ đến gần tháng 8 âm lịch, xôn xao trong chúng ta lại chờ đón một
-            mùa trăng tròn sắp đến. Vì sao sự chờ đợi lại khiến con người ta hào
-            hứng đến vậy? Đợi từ trăng non đến khi trăng tròn là một cảm giác vô
-            cùng đặc biệt. Không chỉ bởi chúng ta dành một khoảng lặng lại để
-            chiêm ngưỡng sự thay đổi của tạo hoá mà còn bởi chúng ta cùng nhau
-            háo hứng ngóng trông bên cạnh những người thân yêu.
+      <div class="main">
+        <div class="breadcrumb">Trang chủ</div>
+        <div class="content">
+          <!--Whole content of page-->
+          <div class="sidebar">
+            <div class="sidemenu">
+              <ul class="sideul">
+                <li class="sideli">
+                  <a href="index.html">DANH MỤC</a>
+                </li>
+                <li class="sideli">
+                  <a href="#">TRANG CHỦ</a>
+                </li>
+                <li class="sideli">
+                  <a href="#">BÁNH NGỌT VÀ BÁNH MỲ</a>
+                </li>
+                <li class="sideli">
+                  <a href="#">LIÊN HỆ</a>
+                </li>
+                <li class="sideli">
+                  <a href="#">TUYỂN DỤNG</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="productdetail">
+            <a href="index.html">Quay lại</a>
+            <div class="productinfo">
+              <div class="prodimg">
+                <img
+                  class="proditem"
+                  id="prod1img"
+                  src="./img/banh1.jpg"
+                  alt="prod1img"
+                  width="100%"
+                />
+              </div>
+              <div class="proddetail">
+                <h3 class="proditem">HỘP TRUNG THU BÌNH AN</h3>
+                <p><strong>Nhãn hiệu: Nguyễn Sơn Bakery</strong></p>
+                <p>
+                  <em
+                    >Hạt sen, Đậu đỏ, sầu riêng, lá dứa, trà xanh, Khoai môn</em
+                  >
+                </p>
+              </div>
+              <div class="shopping">
+                <a href="#" class="shopping">Mua hàng</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <!--Page footer-->
+        <div class="upper">
+          <div class="thongtin">
+            <h3>THÔNG TIN</h3>
+            <p>GIỚI THIỆU</p>
+            <p>LIÊN HỆ</p>
+            <p>CHÍNH SÁCH BẢO MẬT</p>
+          </div>
+          <div class="thongtin">
+            <h3>HỖ TRỢ</h3>
+            <p>TÌM KIẾM</p>
+          </div>
+          <div class="thongtin">
+            <h3>SẢN PHẨM</h3>
+          </div>
+          <div class="thongtin">
+            <h3>TIN TỨC MỚI</h3>
+            <p>Đăng ký nhận tin tức mới về sản phẩm và khuyến mãi</p>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>
+            <span style="color: green; font-weight: bold;"
+              >Powered by Haravan</span
+            >
+            Nguyễn Sơn Bakery © Copyright 2019.
+            <span style="color: crimson">Thiết kế bởi Apollo Themes</span>
           </p>
         </div>
-        <div class="clear"></div>
-        <hr />
       </div>
-      <footer class="footer">
-        <!--Page footer-->
-      </footer>
     </div>
   </body>
 </html>
