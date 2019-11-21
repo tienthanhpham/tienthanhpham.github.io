@@ -31,7 +31,7 @@ body {
 }
 
 .listenall {
-  border-radius: 0.5em;
+  border-radius: 0.2em;
   background-color: #65509e;
   display: flex;
   flex-direction: row;
@@ -39,10 +39,8 @@ body {
   align-items: center;
 }
 
-.icon ic-play {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.ic-play {
+  vertical-align: middle;
 }
 
 .newsong > h3 {
@@ -210,8 +208,4 @@ body {
 
 .listenall:hover a {
   color: #65509e;
-}
-
-.ic-play {
-  vertical-align: middle;
 }
