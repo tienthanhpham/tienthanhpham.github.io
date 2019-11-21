@@ -21,6 +21,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 0.5em;
 }
 
 .title .listenall a {
@@ -158,7 +159,7 @@ body {
 
 .song:hover {
   background-color: lightgrey;
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 .song:hover .overlay {
@@ -209,4 +210,8 @@ body {
 
 .listenall:hover a {
   color: #65509e;
+}
+
+.ic-play {
+  vertical-align: middle;
 }
