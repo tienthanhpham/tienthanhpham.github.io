@@ -13,7 +13,7 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  width: 90%;
+  width: 80%;
   padding: 1%;
 }
 
@@ -21,6 +21,27 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.title .listenall a {
+  text-decoration: none;
+  padding: 0.5em;
+  color: white;
+}
+
+.listenall {
+  border-radius: 0.5em;
+  background-color: #65509e;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon ic-play {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .newsong > h3 {
@@ -154,4 +175,38 @@ body {
 
 .extension a {
   text-decoration: none;
+}
+
+.singer:hover a {
+  opacity: 1;
+  color: crimson;
+}
+
+.songname:hover a {
+  opacity: 1;
+  color: crimson;
+}
+
+.extension a:hover .icon {
+  opacity: 1;
+  color: crimson;
+}
+
+.extension a:hover .icon {
+  opacity: 1;
+  color: crimson;
+}
+
+.extension a:hover .icon {
+  opacity: 1;
+  color: crimson;
+}
+
+.listenall:hover {
+  background-color: white;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.listenall:hover a {
+  color: #65509e;
 }
