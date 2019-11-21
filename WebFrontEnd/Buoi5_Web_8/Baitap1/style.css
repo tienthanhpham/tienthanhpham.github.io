@@ -149,7 +149,7 @@ body {
   height: 100%;
 }
 
-.far {
+.fas {
   color: white;
   font-size: 200%;
   opacity: 0;
@@ -164,8 +164,11 @@ body {
   opacity: 0.8;
 }
 
-.song:hover .far {
+.song:hover .fas {
   opacity: 1;
+  color: white;
+  font-size: 100%;
+  z-index: 10;
 }
 
 .song:hover .extension {
