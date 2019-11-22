@@ -42,7 +42,7 @@
   position: absolute;
   top: 100%;
   box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
-  /* display: none; */
+  display: none;
 }
 
 .sub-items > ul > li {

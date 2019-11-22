@@ -1,0 +1,145 @@
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+}
+
+body {
+  /* width: 100vw; */
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.banner img {
+  width: 100%;
+}
+
+.logo-nav {
+  display: flex;
+  flex-direction: row;
+  padding: 0.5em;
+  background-color: aquamarine;
+}
+
+.logo {
+  flex: 10;
+}
+
+.navbar {
+  flex: 90;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar .menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  padding: 1em;
+}
+
+.breadcrumb {
+  width: 100%;
+  text-align: left;
+  background-color: lightgrey;
+  padding: 0.5em;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+}
+
+.sidebar {
+  flex: 10;
+}
+
+.sidebar .menu {
+  width: 100%;
+  background-color: aquamarine;
+  padding: 1em;
+}
+
+.sidebar .menu li a {
+  padding: 1em;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.main-content {
+  flex: 90;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1em;
+}
+
+.animal-image {
+  padding: 0.5em;
+  overflow: hidden;
+  /* height: 60%; */
+  border: 1px solid black;
+}
+
+.animal-image img {
+  width: 100%;
+
+  transition: all 1s;
+}
+
+.animal-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 0;
+}
+
+.animals {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0.5em;
+  overflow: hidden;
+  transition: all 1s;
+}
+
+.animal-image:hover img {
+  transform: scale(1.5);
+  opacity: 0.5;
+}
