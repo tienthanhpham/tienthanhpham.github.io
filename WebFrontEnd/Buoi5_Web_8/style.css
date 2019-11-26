@@ -1,0 +1,126 @@
+* {
+  font-family: "Oswald", sans-serif;
+}
+body {
+  height: 100vh;
+}
+
+.menu {
+  display: flex;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+}
+a {
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  transition: all 1s;
+}
+
+.menu a:hover {
+  background-color: grey;
+  color: black;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.move {
+  display: flex;
+  justify-content: space-between;
+}
+
+.album {
+  display: flex;
+  justify-content: space-between;
+}
+
+.song {
+  display: flex;
+  flex: 20%;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 10px;
+}
+
+.song:nth-child(1) {
+  padding-left: 0px;
+}
+.song:nth-child(5) {
+  padding-right: 0px;
+}
+
+.songplay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5%;
+}
+
+.songplay img {
+  width: 100%;
+  /* border-radius: 5%; */
+  transition: all 0.5s;
+}
+
+.blur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 2;
+  margin-right: 10px;
+  border-radius: 5%;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.far {
+  font-size: 400%;
+  z-index: 3;
+  color: white;
+}
+
+.songplay:hover img {
+  border-radius: 50%;
+  transform: scale(1.5);
+}
+
+.songplay:hover .blur {
+  opacity: 0.5;
+}
+
+.title2 {
+  width: 100%;
+  position: relative;
+  animation: transform1 2s;
+  animation-fill-mode: forwards;
+  text-align: center;
+}
+
+@keyframes transform1 {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 50%;
+    transform: translate(-50%);
+  }
+}

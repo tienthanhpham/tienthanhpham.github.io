@@ -9,8 +9,11 @@
   </head>
   <body>
     <div id="container">
+      <!--Container for whole page-->
       <div id="header">
+        <!--Header includes Banner & Navbar-->
         <div class="banner">
+          <!--Banner includes Logo img & Logo text-->
           <img
             id="logo"
             src="https://thuhuongbanhtrungthu.vn/wp-content/uploads/2018/04/THB-color.png"
@@ -22,16 +25,17 @@
           </div>
         </div>
         <div class="clear"></div>
-        <div class="menu">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Product</a></li>
-            <li><a href="#">Blog</a></li>
-          </ul>
-        </div>
+        <nav class="menu">
+          <!--Navbar includes menu-->
+          <a href="index.html">Home</a>
+          <a href="#">About us</a>
+          <a href="#">Product</a>
+          <a href="#">Blog</a>
+        </nav>
       </div>
       <div id="content">
+        <!--Whole content of page-->
+        <div class="sidebar"></div>
         <div class="product" id="prod1">
           <img
             class="proditemimg detail"
@@ -56,9 +60,11 @@
           <a href="index.html" style ="font-weight: bold;">Back</a>
         </div>
         <div class="clear"></div>
-        <hr>
+        <hr />
       </div>
-      <div id="footer"></div>
+      <footer class="footer">
+        <!--Page footer-->
+      </footer>
     </div>
   </body>
 </html>

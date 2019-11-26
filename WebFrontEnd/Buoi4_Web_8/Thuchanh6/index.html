@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=720, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Home</title>
+  </head>
+  <body>
+    <div class="facebook">
+      <a href="http://facebook.com"><i class="fab fa-facebook"></i></a>
+      <a href="http://twitter.com"><i class="fab fa-twitter"></i></a>
+    </div>
+    <div class="container">
+      <!--Container for whole page-->
+      <div class="header">
+        <!--Header includes Banner & Navbar-->
+        <div class="banner">
+          <!--Banner includes Logo img & Logo text-->
+          <div class="logocontain">
+            <img class="logo" src="./img/logo_2x.png" alt="logo" />
+          </div>
+
+          <div class="cart">
+            <i class="fas fa-shopping-cart"></i>
+          </div>
+        </div>
+        <div class="menu">
+          <!--Navbar includes menu-->
+          <ul class="menuitem">
+            <li class="menuli home">
+              <a href="#">TRANG CHỦ</a>
+            </li>
+            <li class=" menuli cakemenu">
+              <a href="#">BÁNH NGỌT VÀ BÁNH MỲ</a>
+            </li>
+
+            <li class="menuli news">
+              <a href="#">TIN TỨC VÀ KHUYẾN MẠI</a>
+            </li>
+            <li class="menuli contact">
+              <a href="#">LIÊN HỆ</a>
+            </li>
+            <li class="menuli recruit">
+              <a href="#">TUYỂN DỤNG</a>
+            </li>
+          </ul>
+          <div class="search">
+            <input
+              type="text"
+              class="searchtext"
+              placeholder="Nhập từ khoá ..."
+            />
+            <div class="searchicon"><i class="fas fa-search"></i></div>
+          </div>
+        </div>
+      </div>
+      <div class="main">
+        <div class="breadcrumb">Trang chủ</div>
+        <div class="content">
+          <!--Whole content of page-->
+          <div class="sidebar">
+            <div class="sidemenu">
+              <ul class="sideul">
+                <li class="sideli">
+                  <a href="#">DANH MỤC</a>
+                </li>
+                <li class="sideli">
+                  <a href="#">TRANG CHỦ</a>
+                </li>
+                <li class="sideli">
+                  <a href="#">BÁNH NGỌT VÀ BÁNH MỲ</a>
+                </li>
+                <li class="sideli">
+                  <a href="#">LIÊN HỆ</a>
+                </li>
+                <li class="sideli">
+                  <a href="#">TUYỂN DỤNG</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="productlist">
+            <div class="intro">
+              <h3>BÁNH TRUNG THU</h3>
+              <p>
+                Gác lại những ồn ào của cuộc sống, bộn bề của công việc, cùng
+                gia đình và người thân quây quần đón một cái Tết Trung Thu thật
+                ấm cúng. Thưởng bánh, uống trà chia sẻ với nhau khoảnh khắc ý
+                nghĩa trong cuộc sống. Mỗi miếng bánh nướng, bánh dẻo thơm ngọt
+                thay cho lời chúc tốt đẹp đầy tâm ý cho những người bạn yêu
+                thương. 🤗 Cùng Nguyễn Sơn Bakery gửi gắm những lời chúc tài lộc
+                trọn vẹn nhất tới gia đình, người thân, bạn bè và đồng nghiệp
+                trong dịp lễ Trung Thu tới các bạn nhé! ❤️ Đừng quên tham khảo
+                các dòng dòng bánh qua website của chúng tôi!
+              </p>
+              <p>--------------------------------</p>
+              <p>NGUYỄN SƠN BAKERY</p>
+              <p>Hotline: 02438222228</p>
+              <a href="http://nguyensonbakery.vn/"
+                >Website: http://nguyensonbakery.vn/</a
+              >
+            </div>
+            <div class="rendertype">
+              <div class="render">
+                <i class="fa fa-th"></i> <i class="fas fa-list"></i>
+              </div>
+              <div class="sort">
+                <label for="SortBy">Sắp xếp theo</label>
+                <select name="SortBy" id="SortBy">
+                  <option value="manual">Nổi bật</option>
+                  <option value="best-selling">Bán chạy nhất</option>
+                  <option value="title-ascending">Theo thứ tự, A-Z</option>
+                  <option value="title-descending">Theo thứ tự, Z-A</option>
+                  <option value="price-ascending">Giá, thấp tới cao</option>
+                  <option value="price-descending">Giá, cao xuống thấp</option>
+                  <option value="created-descending">Ngày, mới tới cũ</option>
+                  <option value="created-ascending">Ngày, cũ tới mới</option>
+                </select>
+              </div>
+            </div>
+            <div class="products">
+              <div class="product">
+                <img
+                  class="proditem"
+                  id="prod1img"
+                  src="./img/banh1.jpg"
+                  alt="prod1img"
+                  width="100%"
+                />
+                <h3 class="proditem">HỘP TRUNG THU BÌNH AN</h3>
+                <div class="productbutton">
+                  <div class="fasshop"><i class="fas fa-star"></i></div>
+                  <a href="product1.html" class="shopping">Mua hàng</a>
+                  <div class="fasshop"><i class="fas fa-info-circle"></i></div>
+                </div>
+              </div>
+              <div class="product">
+                <img
+                  class="proditem"
+                  id="prod2img"
+                  src="./img/banh2.jpg"
+                  alt="prod2img"
+                  width="100%"
+                />
+                <h3 class="proditem">HỘP TRUNG THU ĐẠI CÁT</h3>
+                <div class="productbutton">
+                  <div class="fasshop"><i class="fas fa-star"></i></div>
+                  <a href="product2.html" class="shopping">Mua hàng</a>
+                  <div class="fasshop"><i class="fas fa-info-circle"></i></div>
+                </div>
+              </div>
+              <div class="product">
+                <img
+                  class="proditem"
+                  id="prod3img"
+                  src="./img/banh3.jpg"
+                  alt="prod3img"
+                  width="100%"
+                />
+                <h3 class="proditem">HỘP TRUNG THU TRĂNG RẰM</h3>
+                <div class="productbutton">
+                  <div class="fasshop"><i class="fas fa-star"></i></div>
+                  <a href="product3.html" class="shopping">Mua hàng</a>
+                  <div class="fasshop"><i class="fas fa-info-circle"></i></div>
+                </div>
+              </div>
+              <div class="product">
+                <img
+                  class="proditem"
+                  id="prod4img"
+                  src="./img/banh4.jpg"
+                  alt="prod4img"
+                  width="100%"
+                />
+                <h3 class="proditem">HỘP TRUNG THU HỒNG PHÁT</h3>
+                <div class="productbutton">
+                  <div class="fasshop"><i class="fas fa-star"></i></div>
+                  <a href="product4.html" class="shopping">Mua hàng</a>
+                  <div class="fasshop"><i class="fas fa-info-circle"></i></div>
+                </div>
+              </div>
+
+              <div class="product">
+                <img
+                  class="proditem"
+                  id="prod5img"
+                  src="./img/banh5.jpg"
+                  alt="prod5img"
+                  width="100%"
+                />
+                <h3 class="proditem">HỘP TRUNG THU LIÊN HOA CÁT TƯỜNG</h3>
+                <div class="productbutton">
+                  <div class="fasshop"><i class="fas fa-star"></i></div>
+                  <a href="product5.html" class="shopping">Mua hàng</a>
+                  <div class="fasshop"><i class="fas fa-info-circle"></i></div>
+                </div>
+              </div>
+
+              <div class="product">
+                <img
+                  class="proditem"
+                  id="prod6img"
+                  src="./img/banh6.jpg"
+                  alt="prod6img"
+                  width="100%%"
+                />
+                <h3 class="proditem">HỘP TRUNG THU MẪU ĐƠN PHÚ QUÝ</h3>
+                <div class="productbutton">
+                  <div class="fasshop"><i class="fas fa-star"></i></div>
+                  <a href="product6.html" class="shopping">Mua hàng</a>
+                  <div class="fasshop"><i class="fas fa-info-circle"></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <!--Page footer-->
+        <div class="upper">
+          <div class="thongtin">
+            <h3>THÔNG TIN</h3>
+            <p>GIỚI THIỆU</p>
+            <p>LIÊN HỆ</p>
+            <p>CHÍNH SÁCH BẢO MẬT</p>
+          </div>
+          <div class="thongtin">
+            <h3>HỖ TRỢ</h3>
+            <p>TÌM KIẾM</p>
+          </div>
+          <div class="thongtin">
+            <h3>SẢN PHẨM</h3>
+          </div>
+          <div class="thongtin">
+            <h3>TIN TỨC MỚI</h3>
+            <p>Đăng ký nhận tin tức mới về sản phẩm và khuyến mãi</p>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>
+            <span style="color: green; font-weight: bold;"
+              >Powered by Haravan</span
+            >
+            Nguyễn Sơn Bakery © Copyright 2019.
+            <span style="color: crimson">Thiết kế bởi Apollo Themes</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
