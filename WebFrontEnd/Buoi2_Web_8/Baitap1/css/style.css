@@ -48,9 +48,21 @@
   clear: both;
 }
 
+
 .proditem {
   padding: 10px;
+  
 }
+
+.proditemimg {
+  max-width: 300px;
+  padding: 10px;
+}
+
+.proditemimg detail {
+  max-width: 500px;
+}
+
 
 .proditem::after {
   content: " (DISCOUNT)";
