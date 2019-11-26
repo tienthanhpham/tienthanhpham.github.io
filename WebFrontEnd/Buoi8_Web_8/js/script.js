@@ -27,9 +27,9 @@ function textFormat(str) {
   return cut;
 }
 
-function arraySort(arr) {
-  const sorted = arr.sort();
-  return sorted.shift();
+function arrayMin(arr) {
+  return Math.min(...arr);
+  
 }
 
 function nameSort(names) {
