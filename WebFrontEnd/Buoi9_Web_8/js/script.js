@@ -187,18 +187,92 @@ function printX1(numb) {
   }
 }
 
-function printX2(number) {
-  let half = Math.floor(number / 2);
-  for (let i = 1; i <= half * 2 + 1; i++) {
-    for (let j = 0; j <= half * 2 + 1; j++) {
-      if (i == j) {
-        document.write("*");
-      } else if (i + j == half * 2 + 2) {
-        document.write("*");
-      } else {
-        document.write("&nbsp;");
-      }
-    }
+// function printX2(number) {
+//   let half = Math.floor(number / 2);
+//   for (let i = 1; i <= half * 2 + 1; i++) {
+//     for (let j = 0; j <= half * 2 + 1; j++) {
+//       if (i == j) {
+//         document.write("*");
+//       } else if (i + j == half * 2 + 2) {
+//         document.write("*");
+//       } else {
+//         document.write("&nbsp;");
+//       }
+//     }
+//     document.write("<br/>");
+//   }
+// }
+
+function printX3(numb) {
+  for (let i = 1; i <= numb; i++) {
+    let j = numb - i + 1;
+    for (k = 1; k <= numb; k++)
+      if (k == j || k == i) document.write("*");
+      else document.write("&nbsp;");
     document.write("<br/>");
   }
+}
+
+// function printHalfButterfly(numb) {
+//   for (let i = 0; i <= numb; i++) {
+//     for (let j = 1; j <= i + 1; j++) {
+//       document.write("*");
+//     }
+//     document.write("<br/>");
+//   }
+//   for (let i = 0; i <= numb; i++) {
+//     for (let j = numb; j >= i + 1; j--) {
+//       document.write("*");
+//     }
+//     document.write("<br/>");
+//   }
+// }
+
+// function printButterfly(numb) {
+//   for (let i = 0; i <= numb; i++) {
+//     for (let j = 1; j <= i + 1; j++) document.write("*");
+//     for (let k = 0; k <= numb * 2 - i * 2 - 1; k++)
+//       document.write("&nbsp;&nbsp;");
+//     for (let l = 1; l <= i + 1; l++) document.write("*");
+//     document.write("<br/>");
+//   }
+//   for (let i = 0; i < numb; i++) {
+//     for (let j = numb; j >= i + 1; j--) document.write("*");
+//     for (let k = 0; k <= i * 2 + 1; k++) document.write("&nbsp;&nbsp;");
+//     for (let l = numb; l >= i + 1; l--) document.write("*");
+//     document.write("<br/>");
+//   }
+// }
+
+function butterfly(numb) {
+  let half = Math.floor(numb / 2);
+  for (let i = 0; i <= half; i++) {
+    for (let j = 1; j <= i + 1; j++) document.write("*");
+    for (let k = 0; k <= half * 2 - i * 2 - 1; k++)
+      document.write("&nbsp;&nbsp;");
+    for (let l = 1; l <= i + 1; l++) document.write("*");
+    document.write("<br/>");
+  }
+  for (let i = 0; i < half; i++) {
+    for (let j = half; j >= i + 1; j--) document.write("*");
+    for (let k = 0; k <= i * 2 + 1; k++) document.write("&nbsp;&nbsp;");
+    for (let l = half; l >= i + 1; l--) document.write("*");
+    document.write("<br/>");
+  }
+}
+
+function arraySum(numbers) {
+  return numbers.reduce((sum, value) => sum + value);
+}
+
+function arrayMap(numbers) {
+  return numbers.map(value => value % 2);
+}
+
+function arrayFilter(numbers) {
+  return numbers.filter(value => value % 2 == 0);
+}
+
+function studentFilter(students) {
+  return students.filter(student => student[0].toLowerCase() == "h");
 }
