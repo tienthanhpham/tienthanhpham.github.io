@@ -29,7 +29,6 @@ function textFormat(str) {
 
 function arrayMin(arr) {
   return Math.min(...arr);
-  
 }
 
 function nameSort(names) {
@@ -98,11 +97,19 @@ function remainder(numbers) {
 
 function writeNumber() {
   let i = 1;
-  let j = 2;
   while (i <= 100) {
-    document.write('<span style="color:red" >' + i + " " + "</span>");
-    document.write('<span style="color:green" >' + j + " " + "</span>");
-    i = i + 2;
-    j = j + 2;
+    if (i % 2 == 0)
+      document.write('<span style="color:red" >' + i + " " + "</span>");
+    else document.write('<span style="color:green" >' + i + " " + "</span>");
+    i++;
   }
+}
+
+function stringCapital(str) {
+  let arr = str.split(" ");
+  let lowerArr = [];
+  for (let i = 0; i < arr.length; i++)
+    lowerArr[i] =
+      arr[i].slice(0, 1).toUpperCase() + arr[i].slice(1, arr[i].length);
+  return lowerArr.join(" ");
 }
