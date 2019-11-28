@@ -246,38 +246,6 @@ function printX4(numb) {
   }
 }
 
-function printX4(numb) {
-  let half = Math.floor(numb / 2);
-  //upper part of X
-  for (let i = 1; i <= half + 1; i++) {
-    for (let j = 0; j < i - 1; j++)
-      document.write('#');
-    for (let k = i; k <= i; k++)
-      document.write("*");
-    for (let l = i + 1; l <= numb - i; l++)
-      document.write("#");
-    for (let m = i; m <= i; m++)
-      if (m !== half + 1)
-        document.write("*");
-    for (let n = 0; n < i - 1; n++)
-      document.write("#");
-    document.write("<br/>");
-  }
-  //lower part of X
-  for (let i = half; i >= 1; i--) {
-    for (let j = 1; j <= i-1; j++)
-      document.write('#');
-    for (let k = i; k <= i; k++)
-      document.write("*");
-    for (let l = i+ 1; l <= numb - i; l++)
-      document.write("#");
-    for (let m = i; m <= i; m++)
-      document.write("*");
-      for (let j = 1; j <= i-1; j++)
-      document.write('#');
-    document.write("<br/>");
-  }
-}
 
 // function printHalfButterfly(numb) {
 //   for (let i = 0; i <= numb; i++) {
