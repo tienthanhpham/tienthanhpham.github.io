@@ -276,3 +276,61 @@ function arrayFilter(numbers) {
 function studentFilter(students) {
   return students.filter(student => student[0].toLowerCase() == "h");
 }
+
+function Cube(radian) {
+  return (Math.pow(radian, 3) * Math.PI * 4) / 3;
+}
+
+function sumMedium(numb1, numb2) {
+  let sum = 0;
+  if (numb1 < numb2)
+    for (let i = numb1 + 1; i <= numb2 - 1; i++) {
+      sum = sum + i;
+    }
+  else
+    for (let i = numb2 + 1; i <= numb1 - 1; i++) {
+      sum = sum + i;
+    }
+  return sum;
+}
+
+function primeNumb(numb) {
+  for (let i = numb - 1; i >= 2; i--)
+    if (numb % i == 0) {
+      return false;
+    }
+  return true;
+}
+
+function sumPrimeNumb(numb) {
+  if (numb <= 0) return -1;
+  let sum = 0;
+  for (let i = numb; i >= 1; i--) if (primeNumb(i)) sum += i;
+  return sum;
+}
+
+function sumFactor(numb) {
+  if (numb <= 0) return -1;
+  let sum = 0;
+  for (let i = numb - 1; i >= 1; i--) {
+    if (numb % i === 0) sum += i;
+  }
+  return sum;
+}
+
+function Fibo(numb) {
+  let arr = [1, 1];
+  let i = 1;
+  while (arr[i - 1] + arr[i] <= numb) {
+    arr.push(arr[i - 1] + arr[i]);
+    i++;
+  }
+  return arr;
+}
+
+function sumFibo(numbers) {
+  let numb = Fibo(numbers);
+  return numb
+    .filter(value => value % 2 == 0)
+    .reduce((sum, value) => sum + value);
+}
