@@ -207,31 +207,20 @@ function printX3(numb) {
   let half = Math.floor(numb / 2);
   //upper part of X
   for (let i = 1; i <= half + 1; i++) {
-    for (let j = 0; j < i - 1; j++)
-      document.write('&nbsp;');
-    for (let k = i; k <= i; k++)
-      document.write("*");
-    for (let l = i + 1; l <= numb - i; l++)
-      document.write("&nbsp;");
-    for (let m = i; m <= i; m++)
-      if (m !== half + 1)
-        document.write("*");
-    for (let n = 0; n < i - 1; n++)
-      document.write("&nbsp;");
+    for (let j = 0; j < i - 1; j++) document.write("&nbsp;");
+    for (let k = i; k <= i; k++) document.write("*");
+    for (let l = i + 1; l <= numb - i; l++) document.write("&nbsp;");
+    for (let m = i; m <= i; m++) if (m !== half + 1) document.write("*");
+    for (let n = 0; n < i - 1; n++) document.write("&nbsp;");
     document.write("<br/>");
   }
   //lower part of X
   for (let i = half; i >= 1; i--) {
-    for (let j = 1; j <= i-1; j++)
-      document.write('&nbsp;');
-    for (let k = i; k <= i; k++)
-      document.write("*");
-    for (let l = i+ 1; l <= numb - i; l++)
-      document.write("&nbsp;");
-    for (let m = i; m <= i; m++)
-      document.write("*");
-      for (let j = 1; j <= i-1; j++)
-      document.write('&nbsp;');
+    for (let j = 1; j <= i - 1; j++) document.write("&nbsp;");
+    for (let k = i; k <= i; k++) document.write("*");
+    for (let l = i + 1; l <= numb - i; l++) document.write("&nbsp;");
+    for (let m = i; m <= i; m++) document.write("*");
+    for (let j = 1; j <= i - 1; j++) document.write("&nbsp;");
     document.write("<br/>");
   }
 }
@@ -245,7 +234,6 @@ function printX4(numb) {
     document.write("<br/>");
   }
 }
-
 
 // function printHalfButterfly(numb) {
 //   for (let i = 0; i <= numb; i++) {
@@ -329,7 +317,7 @@ function sumMedium(numb1, numb2) {
 }
 
 function primeNumb(numb) {
-  for (let i = numb - 1; i >= 2; i--)
+  for (let i = 2; i <= Math.sqrt(numb); i++)
     if (numb % i == 0) {
       return false;
     }
@@ -363,8 +351,31 @@ function Fibo(numb) {
 }
 
 function sumFibo(numbers) {
-  let numb = Fibo(numbers);
-  return numb
+  return Fibo(numbers)
     .filter(value => value % 2 == 0)
     .reduce((sum, value) => sum + value);
+}
+
+function sumNumb1(numb1, numb2) {
+  if (typeof numb1 == "number" && typeof numb2 == "number")
+    return numb1 > numb2 ? numb1 : numb2;
+  return;
+}
+
+function sumNumb2(numb1, numb2) {
+  return typeof numb1 == "number" && typeof numb2 == "number"
+    ? numb1 > numb2
+      ? numb1
+      : numb2
+    : null;
+}
+
+function factorial(numb) {
+  // if (numb == 1) return 1;
+  // return numb * factorial(numb - 1);
+  return typeof numb == "number" && Number.isInteger(numb) && numb >= 0
+    ? numb == 0
+      ? 1
+      : numb * factorial(numb - 1)
+    : null;
 }
