@@ -97,11 +97,11 @@ function getSeason() {
 }
 
 function getGrade(mark) {
-  if (mark >= 8.5 && mark <= 10) return "A";
-  if (mark >= 7 && mark < 8.5) return "B";
-  if (mark >= 5.5 && mark < 7) return "C";
-  if (mark >= 4 && mark < 5.5) return "D";
   if (mark >= 0 && mark < 4) return "E";
+  if (mark < 5.5) return "D";
+  if (mark < 7) return "C";
+  if (mark < 8.5) return "B";
+  if (mark <= 10) return "A";
   return "unclassified";
 }
 
@@ -293,6 +293,10 @@ function arrayMap(numbers) {
 
 function arrayFilter(numbers) {
   return numbers.filter(value => value % 2 == 0);
+}
+
+function arrayMapSort(numbers) {
+  return numbers.filter(value => value % 2 == 0).sort((a, b) => b - a);
 }
 
 function studentFilter(students) {
