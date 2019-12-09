@@ -75,3 +75,42 @@ function arrayMatrix(m, n) {
   }
   return arr2;
 }
+
+function createArrayZicZAc(m, n) {
+  // Khởi tạo mảng 1 chiều length m
+  let arraym = new Array(m);
+  // loop to create 2d array using 1d array
+  for (let i = 0; i < arraym.length; i++) {
+    arraym[i] = new Array(n);
+  }
+  // lặp qua để tạo các mảng các phần tử 2 chiều
+  let h = 0;
+  for (let i = 0; i < m; i++) {
+    for (let j = 0; j < n; j++) {
+      arraym[i][j] = h++;
+    }
+    if (i % 2 != 0) {
+      arraym[i].reverse();
+    }
+  }
+
+  return arraym;
+}
+
+function filterMaxLength(arrStr) {
+  let maxlength = arrStr[0].length;
+  let newArray = [];
+  for (let i = 0; i < arrStr.length; i++) {
+    if (arrStr[i].length > maxlength) {
+      maxlength = arrStr[i].length;
+    }
+  }
+
+  for (let j = 0; j < arrStr.length; j++) {
+    if (arrStr[j].length == maxlength) {
+      newArray.push(arrStr[j]);
+    }
+  }
+
+  return newArray;
+}

@@ -21,6 +21,11 @@ function factorial(numb) {
   return fact;
 }
 
+function factorial2(numb) {
+  if (numb == 0) return 1;
+  else return numb * factorial2(numb - 1);
+}
+
 function copyEvenArray(numbers) {
   let newArr = [];
   for (let i = 0; i < numbers.length; i++) {
@@ -285,14 +290,18 @@ function butterfly(numb) {
 
 function arraySum(numbers) {
   return numbers.reduce((sum, value) => sum + value);
+  //REDUCE tra ra gia tri accumulate cua các item thoa man dieu kien trong callback
+  //REDUCE nhan vao 2 argument
 }
 
 function arrayMap(numbers) {
   return numbers.map(value => value % 2);
+  //tao ra array moi voi item là kết quả của item với OPERATOR trong callback
 }
 
 function arrayFilter(numbers) {
   return numbers.filter(value => value % 2 == 0);
+  //FILTER tao ra array moi voi item thoa man DIEU KIEN trong callback
 }
 
 function arrayMapSort(numbers) {
