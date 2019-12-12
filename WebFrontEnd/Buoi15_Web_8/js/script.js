@@ -9,7 +9,7 @@ function render(lists) {
   let itemlist = lists
     .map(
       item =>
-        `<li><div>${item} 
+        `<li id="${item.id}"><div>${item.value} 
         <div class="minus" onclick = "deleteItem(this)"><i class="fas fa-minus" ></i></div>
         <div class="edit" onclick = "editItem(this)"><i class="fas fa-pencil-alt"></i></div></div></li>`
     )
@@ -23,18 +23,22 @@ function render(lists) {
 }
 
 function addItem() {
+  let itemobj = {};
   let item = document.getElementById("iteminput");
   if (item.value == "") console.log("empty");
   else {
-    todolist.push(item.value);
+    itemobj.id = new Date().getUTCMilliseconds();
+    itemobj.value = item.value;
+    todolist.push(itemobj);
     document.getElementById("iteminput").value = "";
     render(todolist);
   }
+  itemobj = {};
 }
 
 function deleteItem(obj) {
   for (let i = 0; i < todolist.length; i++) {
-    if (todolist[i] == obj.parentNode.innerText) todolist.splice(i, 1);
+    if (todolist[i].id == obj.parentNode.parentNode.id) todolist.splice(i, 1);
   }
   render(todolist);
 }
@@ -42,8 +46,8 @@ function deleteItem(obj) {
 function editItem(obj) {
   let editText = document.getElementById("iteminput");
   for (let i = 0; i < todolist.length; i++) {
-    if (todolist[i] == obj.parentNode.innerText) {
-      editText.value = todolist[i];
+    if (todolist[i].id == obj.parentNode.parentNode.id) {
+      editText.value = todolist[i].value;
       index = i;
     }
   }
@@ -53,7 +57,7 @@ function editItem(obj) {
 function saveItem() {
   let editText = document.getElementById("iteminput");
   for (let i = 0; i < todolist.length; i++)
-    if (i == index) todolist[i] = editText.value;
+    if (i == index) todolist[i].value = editText.value;
   render(todolist);
   index = -1;
 }
