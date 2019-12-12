@@ -58,6 +58,7 @@ function saveItem() {
   let editText = document.getElementById("iteminput");
   for (let i = 0; i < todolist.length; i++)
     if (i == index) todolist[i].value = editText.value;
+  document.getElementById("iteminput").value = "";
   render(todolist);
   index = -1;
 }
