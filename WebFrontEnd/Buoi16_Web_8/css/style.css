@@ -21,6 +21,9 @@ div {
   align-items: center;
   margin: 5px auto;
   padding: 5px;
+  width: 28vw;
+  height: 29vw;
+  border: 1px solid black;
 }
 
 .calculation {
