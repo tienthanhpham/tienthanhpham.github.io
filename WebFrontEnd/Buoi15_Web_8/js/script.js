@@ -1,23 +1,25 @@
 let todolist = [];
 let ul = document.createElement("ul");
 let display = document.getElementsByTagName("body")[0].appendChild(ul);
+// let display = document.querySelector(".container").appendChild(ul);
 let index;
 
 render(todolist);
 
 function render(lists) {
-  let itemlist = lists
-    .map(
-      item =>
-        `<li id="${item.id}"><div>${item.value} 
+  if (lists.length > 0) {
+    let itemlist = lists
+      .map(
+        item =>
+          `<li id="${item.id}"><div>${item.value} 
         <div class="minus" onclick = "deleteItem(this)"><i class="fas fa-minus" ></i></div>
         <div class="edit" onclick = "editItem(this)"><i class="fas fa-pencil-alt"></i></div></div></li>`
-    )
-    .join(" ");
+      )
+      .join(" ");
 
-  display.innerHTML = itemlist;
-  display.classList.add("listUI");
-
+    display.innerHTML = itemlist;
+    display.classList.add("listUI");
+  }
   let buttonInput = document.getElementById("submit");
   buttonInput.addEventListener("click", addItem);
 }

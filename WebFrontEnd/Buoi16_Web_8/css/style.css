@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 15px;
+  font-size: 25px;
+}
+div {
+  text-align: center;
+  vertical-align: middle;
+}
+.display {
+  text-align: right;
+  border: 1px solid black;
+  padding: 5px;
+  width: 13em;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: center;
+  margin: 5px auto;
+  padding: 5px;
+}
+
+.calculation {
+  display: grid;
+  margin: 5px auto;
+  border: 1px solid black;
+  padding: 5px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.calculation div {
+  width: 2em;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.equal {
+  grid-column: 4/4;
+  grid-row: 2/6;
+  background-color: coral;
+}
