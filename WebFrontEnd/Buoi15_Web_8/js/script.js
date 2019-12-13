@@ -3,23 +3,23 @@ let ul = document.createElement("ul");
 let display = document.getElementsByTagName("body")[0].appendChild(ul);
 // let display = document.querySelector(".container").appendChild(ul);
 let index;
+let answer;
+let id = -1;
 
 render(todolist);
 
 function render(lists) {
-  if (lists.length > 0) {
-    let itemlist = lists
-      .map(
-        item =>
-          `<li id="${item.id}"><div>${item.value} 
-        <div class="minus" onclick = "deleteItem(this)"><i class="fas fa-minus" ></i></div>
+  let itemlist = lists
+    .map(
+      item =>
+        `<li id="${item.id}"><div>${item.value} 
+        <div class="minus" onclick = "confirm(this)"><i class="fas fa-minus" ></i></div>
         <div class="edit" onclick = "editItem(this)"><i class="fas fa-pencil-alt"></i></div></div></li>`
-      )
-      .join(" ");
+    )
+    .join(" ");
 
-    display.innerHTML = itemlist;
-    display.classList.add("listUI");
-  }
+  display.innerHTML = itemlist;
+  display.classList.add("listUI");
   let buttonInput = document.getElementById("submit");
   buttonInput.addEventListener("click", addItem);
 }
@@ -38,9 +38,16 @@ function addItem() {
   itemobj = {};
 }
 
-function deleteItem(obj) {
+// function deleteItem(obj) {
+//   for (let i = 0; i < todolist.length; i++) {
+//     if (todolist[i].id == obj.parentNode.parentNode.id) todolist.splice(i, 1);
+//   }
+//   render(todolist);
+// }
+
+function deleteItem(id) {
   for (let i = 0; i < todolist.length; i++) {
-    if (todolist[i].id == obj.parentNode.parentNode.id) todolist.splice(i, 1);
+    if (todolist[i].id == id) todolist.splice(i, 1);
   }
   render(todolist);
 }
@@ -63,4 +70,24 @@ function saveItem() {
   document.getElementById("iteminput").value = "";
   render(todolist);
   index = -1;
+}
+
+function confirm(item) {
+  document.querySelector(".confirm").classList.add("active");
+  id = item.parentNode.parentNode.id;
+  // console.log(item.parentNode.parentNode.id);
+}
+
+function confirmHidden() {
+  document.getElementsByClassName("confirm")[0].classList.remove("active");
+  document.getElementsByClassName("confirm")[0].classList.add("inactive");
+}
+
+function getConfirm(answer) {
+  // console.log(answer.innerText);
+  if (answer.innerText == "YES") {
+    deleteItem(id);
+    confirmHidden();
+  } else confirmHidden();
+  id = -1;
 }

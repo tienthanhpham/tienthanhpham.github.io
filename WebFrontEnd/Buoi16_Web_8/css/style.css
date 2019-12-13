@@ -43,6 +43,10 @@ div {
   justify-content: center;
 }
 
+.calculation div:hover {
+  background-color: green;
+}
+
 .equal {
   grid-column: 4/4;
   grid-row: 2/6;
