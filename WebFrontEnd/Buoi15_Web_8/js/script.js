@@ -22,6 +22,7 @@ function render(lists) {
   display.classList.add("listUI");
   let buttonInput = document.getElementById("submit");
   buttonInput.addEventListener("click", addItem);
+  document.getElementById("iteminput").value = "";
 }
 
 function addItem() {
@@ -53,6 +54,7 @@ function deleteItem(id) {
 }
 
 function editItem(obj) {
+  document.getElementById("save").classList.remove("inactive");
   let editText = document.getElementById("iteminput");
   for (let i = 0; i < todolist.length; i++) {
     if (todolist[i].id == obj.parentNode.parentNode.id) {
@@ -76,11 +78,20 @@ function confirm(item) {
   document.querySelector(".confirm").classList.add("active");
   id = item.parentNode.parentNode.id;
   // console.log(item.parentNode.parentNode.id);
+  document.getElementById("iteminput").disabled = true;
+  document.getElementById("save").disabled = true;
+  document.getElementById("submit").disabled = true;
+  let li = document.getElementsByClassName("fas");
+  console.log(li);
+  for (let i = 0; i < li.length; i++) li[i].onclick = null;
 }
 
 function confirmHidden() {
   document.getElementsByClassName("confirm")[0].classList.remove("active");
   document.getElementsByClassName("confirm")[0].classList.add("inactive");
+  document.getElementById("iteminput").disabled = false;
+  document.getElementById("submit").disabled = false;
+  document.getElementById("save").disabled = false;
 }
 
 function getConfirm(answer) {
