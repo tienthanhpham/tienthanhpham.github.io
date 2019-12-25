@@ -6,7 +6,9 @@ let index;
 let answer;
 let id = -1;
 
-render(todolist);
+$(document).ready(function() {
+  render(todolist);
+});
 
 function render(lists) {
   let itemlist = lists
@@ -48,7 +50,6 @@ function deleteItem(id) {
 }
 
 function editItem(obj) {
-  console.log("Bat dau sua");
   $("#save").removeClass("inactive");
   let editText = $("#iteminput");
 
@@ -71,8 +72,8 @@ function saveItem() {
 }
 
 function confirm(item) {
-  console.log("Bat dau confirm");
   $(".confirm").addClass("active"); //hien hoi thoai Confirm
+  // $(".confirm").show();
   id = $(item)
     .parent()
     .parent()
@@ -83,13 +84,16 @@ function confirm(item) {
     .prop("disabled", true);
   $(".fas")
     .parent()
-    .click(false);
+    .hide();
 }
 
 function confirmHidden() {
+  // $(".fas")
+  //   .parent()
+  //   .click(confirm($(this)));
   $(".fas")
     .parent()
-    .click(confirm($(this)));
+    .show();
   $(".container")
     .children()
     .removeAttr("disabled");
