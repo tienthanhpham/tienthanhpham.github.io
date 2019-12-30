@@ -7,7 +7,7 @@ body {
   font-size: 12px;
   margin: 0 auto;
   box-sizing: border-box;
-  max-width: 1440px;
+  max-width: 95%;
 }
 
 header {
@@ -260,7 +260,7 @@ footer .hero .deals .dealtitle {
     align-items: center;
   }
   #searchmodel {
-    width: 100%;
+    width: 40vw;
     border-bottom: 1px solid lightgrey;
     border-left: 1px solid lightgrey;
   }
@@ -297,7 +297,7 @@ footer .hero .deals .dealtitle {
     align-items: center;
   }
   #searchmodel {
-    width: 100%;
+    width: 40vw;
     border-bottom: 1px solid lightgrey;
     border-left: 1px solid lightgrey;
   }
@@ -334,7 +334,7 @@ footer .hero .deals .dealtitle {
     align-items: center;
   }
   #searchmodel {
-    width: 100%;
+    width: 40vw;
     border-bottom: 1px solid lightgrey;
     border-left: 1px solid lightgrey;
   }
@@ -371,7 +371,7 @@ footer .hero .deals .dealtitle {
     align-items: center;
   }
   #searchmodel {
-    width: 100%;
+    width: 40vw;
     border-bottom: 1px solid lightgrey;
     border-left: 1px solid lightgrey;
   }
@@ -408,7 +408,7 @@ footer .hero .deals .dealtitle {
     align-items: center;
   }
   #searchmodel {
-    width: 100%;
+    width: 40vw;
     border-bottom: 1px solid lightgrey;
     border-left: 1px solid lightgrey;
   }
@@ -450,7 +450,7 @@ footer .hero .deals .dealtitle {
   }
 
   #searchmodel {
-    width: 100%;
+    width: 40vw;
     border-bottom: 1px solid lightgrey;
     border-left: 1px solid lightgrey;
   }
