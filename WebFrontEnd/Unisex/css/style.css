@@ -199,13 +199,13 @@ div.sales {
 
 .sales.sales1 {
   margin-bottom: 1rem;
-  background-image: url(/Unisex/images/sale1.jpeg);
+  background-image: url(../images/sale1.jpeg);
   background-size: cover !important;
   background-repeat: no-repeat !important;
   background-position: 50% 50%;
 }
 .sales.sales2 {
-  background-image: url(/Unisex/images/sale2.jpg);
+  background-image: url(../images/sale2.jpg);
   background-size: cover !important;
   background-repeat: no-repeat !important;
   background-position: 50% 50%;
@@ -213,19 +213,19 @@ div.sales {
 }
 
 .carousel-inner .carousel-item:nth-child(1) {
-  background-image: url(/Unisex/images/unisex_slider.jpg);
+  background-image: url(../images/unisex_slider.jpg);
   background-size: cover !important;
   background-repeat: no-repeat !important;
   background-position: 50% 50%;
 }
 .carousel-inner .carousel-item:nth-child(2) {
-  background-image: url(/Unisex/images/unisex_slider_2.jpg);
+  background-image: url(../images/unisex_slider_2.jpg);
   background-size: cover !important;
   background-repeat: no-repeat !important;
   background-position: 50% 50%;
 }
 .carousel-inner .carousel-item:nth-child(3) {
-  background-image: url(/Unisex/images/unisex_slider_3.jpg);
+  background-image: url(../images/unisex_slider_3.jpg);
   background-size: cover !important;
   background-repeat: no-repeat !important;
   background-position: 50% 50%;
