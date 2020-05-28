@@ -249,6 +249,9 @@ footer .hero .deals .dealtitle {
 }
 
 @media screen and (max-width: 320px) {
+  body {
+    height: 100vh;
+  }
   .searchtitle,
   .searchtip {
     display: none;
@@ -286,6 +289,9 @@ footer .hero .deals .dealtitle {
 }
 
 @media screen and (min-width: 321px) and (max-width: 375px) {
+  body {
+    height: 100vh;
+  }
   .searchtitle,
   .searchtip {
     display: none;

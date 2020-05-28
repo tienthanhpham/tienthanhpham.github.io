@@ -392,3 +392,61 @@ function factorial(numb) {
       : numb * factorial(numb - 1)
     : null;
 }
+
+const numbers = [1, 2, 3, 4];
+
+//console.log(numbers.slice(1, 2));
+
+function move(array, index, offset) {
+  const output = [...array];
+  if (index + offset < 0 || index + offset > output.length)
+    console.log("invalid offset");
+  else {
+    let sliced = output[index];
+    output.splice(index, 1);
+    output.splice(index + offset, 0, sliced);
+    return output;
+  }
+}
+
+function countOccurrences1(array, searchElement) {
+  let count = 0;
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] == searchElement) count += 1;
+  }
+  return count;
+}
+
+const movies = [
+  { title: "a", year: 2018, rating: 4.5 },
+  { title: "b", year: 2018, rating: 4.7 },
+  { title: "c", year: 2018, rating: 3 },
+  { title: "d", year: 2017, rating: 4.5 }
+];
+
+//All the movies in 2018 with rating > 4
+//Sort them by their rating
+//Descending order
+//Pick their title & display on the console 'b' 'a'
+
+function findMovie(array, year, rating) {
+  return array
+    .filter(value => value.year == year && value.rating > rating)
+    .sort((a, b) => b.rating - a.rating)
+    .map(value => value.title);
+}
+
+function countOccurrences(array, searchElement) {
+  if (!Array.isArray(array)) throw new Error("Invalid Input");
+  return array.reduce((acc, current) => {
+    const occurence = current === searchElement ? 1 : 0;
+    return acc + occurence;
+  }, 0);
+}
+
+try {
+  const numbers = [1, 2, 3, 4];
+  console.log(countOccurrences(numbers, 2));
+} catch (e) {
+  alert(e);
+}
