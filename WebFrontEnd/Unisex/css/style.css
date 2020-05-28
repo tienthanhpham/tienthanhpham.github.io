@@ -619,7 +619,7 @@ button.prev-next-button.next {
 
 .countdown.sales.sales1 {
   margin-bottom: 1rem;
-  background-image: url(/Unisex/images/unisex_slider.jpg);
+  background-image: url(../images/unisex_slider.jpg);
   background-size: cover !important;
   background-repeat: no-repeat !important;
   background-position: 50% 50%;
