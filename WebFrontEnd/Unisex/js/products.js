@@ -251,7 +251,7 @@ function viewProductDetail(product) {
           <input class="amount w-25 form-control text-center border-right-0 rounded-0" type="text" name="" value="1">
           <input onclick = "plus(this)" class="plus form-control w-25 text-center rounded-0" type="button" name="" value="+">
         </div>
-        <button onclick = "updateCartContent(this)" class="btn-addtocart btn btn-primary rounded-0 ml-3" type="button">CHO VAO GIO</button>
+        <button onclick = "updateCartContent(this)" class="btn-addtocart btn btn-primary rounded-0 ml-3" type="button">CHO VÀO GIỎ</button>
       </div>
     </div>
     `;
