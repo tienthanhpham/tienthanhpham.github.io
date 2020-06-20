@@ -1,4 +1,22 @@
 $(document).ready(function () {
+  getCart();
+
+  //Display number with comma - Begin
+  function displayNumber() {
+    $(".total").each(function (index, element) {
+      money = $(element).text();
+      $(element).text(
+        money.replace(/\D/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+      );
+    });
+    $(".price").each(function (index, element) {
+      money = $(element).text();
+      $(element).text(
+        money.replace(/\D/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+      );
+    });
+  }
+  //Display number with comma - End
   //Catch changeText of SearchList dropdown button
   $("div.searchlist a.dropdown-item").click(function (e) {
     e.preventDefault();
@@ -246,7 +264,7 @@ $(document).ready(function () {
 
     //Display product desc with its got data
     document.querySelector(".product-desc").innerHTML = `
-    <h2>${data.name}</h2>
+    <h2> ${data.name}</h2>
               <div class="border-top w-25 ml-0 mb-2" style="border: 2px solid #e1e1e1;"></div>
               <div class="my-1 priceinfo">
                 <div class="price-icon d-flex flex-row justify-content-center align-items-center"><img class="mr-2" style="width: 2rem;"src="./images/price.svg" alt="">
@@ -287,6 +305,7 @@ $(document).ready(function () {
   $("input.plus").click(function (e) {
     e.preventDefault();
     $("input.amount").val(parseInt($("input.amount").val()) + 1);
+    console.log($("input.amount"));
   });
   //Minus click
   $("input.minus").click(function (e) {
@@ -341,6 +360,7 @@ $(document).ready(function () {
     updateNumbers();
     updateCost(product);
     displayCart();
+    displayNumber();
   }
   function updateNumbers() {
     let amount = parseInt($(".amount").val());
@@ -353,6 +373,7 @@ $(document).ready(function () {
 
     localStorage.setItem("totalQuantity", totalQuantity);
     // $("#cartquantity").text(totalQuantity);
+    displayNumber();
   }
   function updateCost(product) {
     let amount = parseInt($(".amount").val());
@@ -365,6 +386,7 @@ $(document).ready(function () {
     } else totalCost = productData.price * amount;
 
     localStorage.setItem("totalCost", totalCost);
+    displayNumber();
   }
   function displayCart() {
     let cartItem = localStorage.getItem("productInCart"); //JSON
@@ -379,10 +401,10 @@ $(document).ready(function () {
       Object.values(cartItem).map((item) => {
         document.querySelector(".cartcontainer").innerHTML += `
       <div style="display:flex">
-        <div><img src="${item.img}" style="width:50px;"></div>
+        <div class="px-1 py-1">><img src="${item.img}" style="width:50px;"></div>
         <div style="display:flex; flex-direction: column; align-items: center; justify-content: center">
           <div>${item.name}</div>
-          <div>${item.productCost}</div>
+          <div class="price">${item.productCost}</div>
         </div>
       </div>
       <hr style="border:0.5px #f5f5f5 solid; width: 100%; ">
@@ -391,8 +413,39 @@ $(document).ready(function () {
       $(".totalcost").text(`${totalCost}`);
     }
     $("div.cartquickview").addClass("cartview-show");
+    displayNumber();
   }
+
   //Update cart end
+
+  //GetCart on Load - Begin
+  function getCart() {
+    let cartItem = localStorage.getItem("productInCart"); //JSON
+    cartItem = JSON.parse(cartItem);
+    let totalQuantity = localStorage.getItem("totalQuantity");
+    let totalCost = localStorage.getItem("totalCost");
+
+    $("#cartquantity").text(totalQuantity);
+
+    if (cartItem && $(".cartcontainer")) {
+      $(".cartcontainer").html("");
+      Object.values(cartItem).map((item) => {
+        document.querySelector(".cartcontainer").innerHTML += `
+      <div style="display:flex">
+      <div class="px-1 py-1"><img src="${item.img}" style="width:50px;"></div>
+        <div style="display:flex; flex-direction: column; align-items: center; justify-content: center">
+          <div>${item.name}</div>
+          <div class="price">${item.productCost}</div>
+        </div>
+      </div>
+      <hr style="border:0.5px #f5f5f5 solid; width: 100%; ">
+      `;
+      });
+      $(".totalcost").text(`${totalCost}`);
+    }
+    displayNumber();
+  }
+  //GetCart on Load - End
 
   //Countdown sale
   $("#clock").countdown("2020/05/10", function (event) {

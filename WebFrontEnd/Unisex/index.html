@@ -33,7 +33,7 @@
                 >
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="#"
+                <a class="nav-link" href="products.html"
                   >Cửa hàng <span class="sr-only">(current)</span></a
                 >
               </li>
@@ -101,13 +101,17 @@
             <span id="cartquantity">0</span>
             <div class="cartquickview px-2 border bg-white">
               <div class="cartcontainer d-flex flex-column justify-content-center align-items-center"></div>
-              <hr style="border:1px #f5f5f5 solid; width: 100%; ">
+              <!-- <hr style="border:1px #f5f5f5 solid; width: 100%; "> -->
               <h5 style="text-align: center;"><strong>Tong tien</strong></h5>
-              <div class="totalcost text-center"><strong>0</strong></div>
+              <div class="totalcost total text-center"><strong>0</strong></div>
               <hr style="border:0.5px #f5f5f5 solid; width: 100%; ">
               <div class="cartbuttons d-flex flex-column px-2">
-                <button class="btn btn-primary my-3" type="button">XEM GIO</button>
-                <button class="btn btn-warning mb-3" type="button">THANH TOAN</button>
+                <a href="settlement.html" class="text-center">
+                  <button class="btn btn-primary my-3 w-100" type="button">XEM GIO</button>
+                </a>
+                <a href="settlement.html" class="text-center">
+                  <button class="btn btn-warning mb-3 w-100" type="button">THANH TOAN</button>
+                </a>
               </div>
               
             </div>
@@ -131,7 +135,7 @@
                 <a class="nav-link text-white" href="#">Giới thiệu</a>
               </li>
               <li class="nav-item text-white">
-                <a class="nav-link text-white" href="#">Cửa hàng</a>
+                <a class="nav-link text-white" href="products.html">Cửa hàng</a>
               </li>
               <li class="nav-item text-white">
                 <a class="nav-link text-white" href="#">Tin tức</a>
@@ -148,34 +152,29 @@
     <!--Header(logo-search-account-cart) end-->
 
     <!--Quickviewbar start-->
-    <div class="quickviewbar container mb-5">
+    <div class="quickviewbar container">
       <nav class="navbar navbar-expand-lg navbar-light bg-light upper-navbar mb-2">
           <div class="collapse navbar-collapse">
             <ul class="navbar-nav justify-content-around" style="width:100%">
-              <li class="nav-item active">
-                <a class="nav-link" href="#"
-                  >Giới thiệu <span class="sr-only">(current)</span></a
-                >
+              <li class="nav-item active py-3">
+                Free Shipping
               </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="#"
-                  >Cửa hàng <span class="sr-only">(current)</span></a
-                >
+              <li class="nav-item active py-3">
+                6000 lượt truy cập
               </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="#"
-                  >Liên hệ <span class="sr-only">(current)</span></a
-                >
+              <li class="nav-item active py-3">
+                1000 đơn hàng
               </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="#"
-                  >FAQ <span class="sr-only">(current)</span></a
-                >
+              <li class="nav-item active py-3">
+                  <span><i class="fas fa-phone-alt"></i> 0988565830</span>
               </li>
+              <li class="nav-item active py-3">
+                <span><i class="far fa-clock"></i> 8:00 - 17:00</span>
+            </li>
             </ul>
           </div>
       </nav>
-    </div>
+  </div>
     <!--Quickviewbar end-->
     <!--Slider-sales start-->
     <div class="container slide-sales mb-5">
@@ -246,14 +245,14 @@
     <!-- Best selling start -->
     <div class="container best-selling mb-5">
       <!-- Best selling product modal start-->
-      <div class="product-view-modal d-flex flex-row">
+      <div class="product-view-modal d-flex flex-row ml-auto mr-auto">
         <button class="close">&times;</button>
         <div class="product-info d-flex flex-row">
           <div class="product-info-image" style="margin-right: 1rem;">
           </div>
           <div class="product-info-detail d-flex flex-column align-items-start mt-2">
             <div class="product-desc">
-              <h2>GIAY THE THAO</h2>
+              <h2>Giày thể thao</h2>
               <div class="border-top w-25 ml-0 mb-2" style="border: 2px solid #e1e1e1;"></div>
               <div class="my-1 priceinfo">
                 <div class="price-icon d-flex flex-row justify-content-center align-items-center"><img class="mr-2" style="width: 2rem;"src="./images/price.svg" alt="">
@@ -291,18 +290,21 @@
       </button>
       <div class="row bestsellcards">
         <div class="col-md-3 col-12">
-          <div class="card" data-id="1" data-categ= "Giay dep" data-name="Giay the thao" data-price="100000" data-incart="0" data-img="./images/shoe1.jpeg" data-desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nostrum ipsam suscipit illo. Odit facere fuga, praesentium assumenda rerum doloribus veniam nisi sunt possimus molestiae aliquam libero, ipsum quam esse.">
-            <div class="card-image">
+          
+            <div class="card" data-id="1" data-categ= "Giay dep" data-name="Giay the thao" data-price="100000" data-incart="0" data-img="./images/shoe1.jpeg" data-desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nostrum ipsam suscipit illo. Odit facere fuga, praesentium assumenda rerum doloribus veniam nisi sunt possimus molestiae aliquam libero, ipsum quam esse.">
+              <a href="products.html" style="text-decoration: none; color:inherit;">
+              <div class="card-image">
               <img src="./images/shoe1.jpeg" class="card-img-top" alt="...">
+              </a>  
             </div>
             <div class="bestsell card-body">
               <div class="my-1 category">
                 <div class="categ-icon"><img src="./images/shoes.svg" alt="..."></div>
-                <div class="categ-name ml-2">Giay dep</div>
+                <div class="categ-name ml-2">Giày dép</div>
               </div>
               <div class="my-1 product">
                 <div class="prod-icon"><img src="./images/shoes (1).svg" alt="..."></div>
-                <div class="prod-name ml-2">Giay the thao</div>
+                <div class="prod-name ml-2">Giày thể thao</div>
               </div>
               <div class="my-1 priceinfo">
                 <div class="price-icon"><img src="./images/price.svg" alt="..."></div>
@@ -313,13 +315,18 @@
             <div class="quickviewprd">
               <button style="width: 100%" class="viewproduct btn btn-primary px-5" type="button">XEM NHANH</button>
             </div>
-          </div>
-        </div>
-        <div class="col-md-3 col-12">
-          <div class="card" data-id="2" data-categ= "Tui" data-name="Tui thoi trang" data-img="./images/bag1.jpeg" data-price="100000" data-incart="0" data-desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nostrum ipsam suscipit illo. Odit facere fuga, praesentium assumenda rerum doloribus veniam nisi sunt possimus molestiae aliquam libero, ipsum quam esse.">
-            <div class="card-image">
-              <img src="./images/bag1.jpeg" class="card-img-top" alt="...">
             </div>
+          
+        </div>
+       
+        <div class="col-md-3 col-12">
+          
+            <div class="card" data-id="2" data-categ= "Tui" data-name="Tui thoi trang" data-img="./images/bag1.jpeg" data-price="100000" data-incart="0" data-desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nostrum ipsam suscipit illo. Odit facere fuga, praesentium assumenda rerum doloribus veniam nisi sunt possimus molestiae aliquam libero, ipsum quam esse.">
+              <a href="products.html" style="text-decoration: none; color:inherit;"> 
+                <div class="card-image">
+                <img src="./images/bag1.jpeg" class="card-img-top" alt="...">
+              </div>
+              </a>
             <div class="bestsell card-body">
               <div class="my-1 category">
                 <div class="categ-icon"><img src="./images/bag.svg" alt=""></div>
@@ -337,13 +344,17 @@
             <div class="quickviewprd">
               <button style="width: 100%" class="viewproduct btn btn-primary px-5" type="button">XEM NHANH</button>
             </div>
-          </div>
+            </div>
+          
         </div>
         <div class="col-md-3 col-12">
-          <div class="card" data-id="3" data-categ= "Do nam" data-name="Ao phong nam" data-img="./images/shirt1.jpg" data-price="100000" data-incart="0" data-desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nostrum ipsam suscipit illo. Odit facere fuga, praesentium assumenda rerum doloribus veniam nisi sunt possimus molestiae aliquam libero, ipsum quam esse.">
-            <div class="card-image">
+          
+            <div class="card" data-id="3" data-categ= "Do nam" data-name="Ao phong nam" data-img="./images/shirt1.jpg" data-price="100000" data-incart="0" data-desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nostrum ipsam suscipit illo. Odit facere fuga, praesentium assumenda rerum doloribus veniam nisi sunt possimus molestiae aliquam libero, ipsum quam esse.">
+              <a href="products.html" style="text-decoration: none; color:inherit;"> 
+              <div class="card-image">
               <img src="./images/shirt1.jpg" class="card-img-top" alt="...">
             </div>
+          </a>
             <div class="bestsell card-body">
               <div class="my-1 category">
                 <div class="categ-icon"><img src="./images/shirt.svg" alt=""></div>
@@ -361,13 +372,17 @@
             <div class="quickviewprd">
               <button style="width: 100%" class="viewproduct btn btn-primary px-5" type="button">XEM NHANH</button>
             </div>
-          </div>
+            </div>
+          
         </div>
         <div class="col-md-3 col-12">
-          <div class="card" data-id="4" data-categ= "Do nu" data-name="Ao Pullover" data-img="./images/women1.jpeg" data-price="100000" data-incart="0" data-desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nostrum ipsam suscipit illo. Odit facere fuga, praesentium assumenda rerum doloribus veniam nisi sunt possimus molestiae aliquam libero, ipsum quam esse.">
-            <div class="card-image">
-              <img src="./images/women1.jpeg" class="card-img-top" alt="...">
-            </div>
+          
+            <div class="card" data-id="4" data-categ= "Do nu" data-name="Ao Pullover" data-img="./images/women1.jpeg" data-price="100000" data-incart="0" data-desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nostrum ipsam suscipit illo. Odit facere fuga, praesentium assumenda rerum doloribus veniam nisi sunt possimus molestiae aliquam libero, ipsum quam esse.">
+            <a href="products.html" style="text-decoration: none; color:inherit;"> 
+              <div class="card-image">
+                <img src="./images/women1.jpeg" class="card-img-top" alt="...">
+              </div>
+            </a>
             <div class="bestsell card-body">
               <div class="my-1 category">
                 <div class="categ-icon"><img src="./images/wedding-dress.svg" alt=""></div>
@@ -385,13 +400,17 @@
             <div class="quickviewprd">
               <button style="width: 100%" class="viewproduct btn btn-primary px-5" type="button">XEM NHANH</button>
             </div>
-          </div>
+            </div>
+          </a>
         </div>
         <div class="col-md-3 col-12">
-          <div class="card" data-id="5" data-categ= "Do nam" data-name="Ao phong nam" data-img="./images/shirt3.jpg" data-price="100000" data-incart="0" data-desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nostrum ipsam suscipit illo. Odit facere fuga, praesentium assumenda rerum doloribus veniam nisi sunt possimus molestiae aliquam libero, ipsum quam esse.">
-            <div class="card-image">
-              <img src="./images/shirt3.jpg" class="card-img-top" alt="...">
-            </div>
+          
+            <div class="card" data-id="5" data-categ= "Do nam" data-name="Ao phong nam" data-img="./images/shirt3.jpg" data-price="100000" data-incart="0" data-desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nostrum ipsam suscipit illo. Odit facere fuga, praesentium assumenda rerum doloribus veniam nisi sunt possimus molestiae aliquam libero, ipsum quam esse.">
+              <a href="products.html" style="text-decoration: none; color:inherit;">  
+                <div class="card-image">
+                  <img src="./images/shirt3.jpg" class="card-img-top" alt="...">
+                </div>
+              </a>  
             <div class="bestsell card-body">
               <div class="my-1 category">
                 <div class="categ-icon"><img src="./images/shirt.svg" alt=""></div>
@@ -409,13 +428,17 @@
             <div class="quickviewprd">
               <button style="width: 100%" class="viewproduct btn btn-primary px-5" type="button">XEM NHANH</button>
             </div>
-          </div>
+            </div>
+          </a>
         </div>
         <div class="col-md-3 col-12">
-          <div class="card" data-id="6" data-categ= "Do nam" data-name="Ao phong nam" data-img="./images/shirt4.jpg" data-price="100000" data-incart="0" data-desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nostrum ipsam suscipit illo. Odit facere fuga, praesentium assumenda rerum doloribus veniam nisi sunt possimus molestiae aliquam libero, ipsum quam esse.">
-            <div class="card-image">
-              <img src="./images/shirt4.jpg" class="card-img-top" alt="...">
-            </div>
+          
+            <div class="card" data-id="6" data-categ= "Do nam" data-name="Ao phong nam" data-img="./images/shirt4.jpg" data-price="100000" data-incart="0" data-desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nostrum ipsam suscipit illo. Odit facere fuga, praesentium assumenda rerum doloribus veniam nisi sunt possimus molestiae aliquam libero, ipsum quam esse.">
+              <a href="products.html" style="text-decoration: none; color:inherit;"> 
+              <div class="card-image">
+                <img src="./images/shirt4.jpg" class="card-img-top" alt="...">
+              </div>
+              </a>
             <div class="bestsell card-body">
               <div class="my-1 category">
                 <div class="categ-icon"><img src="./images/shirt.svg" alt=""></div>
@@ -433,7 +456,8 @@
             <div class="quickviewprd">
               <button style="width: 100%" class="viewproduct btn btn-primary px-5" type="button">XEM NHANH</button>
             </div>
-          </div>
+            </div>
+          </a>
         </div>
       </div>  
     </div>
@@ -457,18 +481,19 @@
       </button>
       <div class="row newproductcard">
         <div class="col-md-3 col-12">
-          <div class="card" data-id="1" data-categ= "Giay dep" data-name="Giay the thao" data-img="./images/shoe1.jpeg" data-price="100000" data-incart="0" data-desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nostrum ipsam suscipit illo. Odit facere fuga, praesentium assumenda rerum doloribus veniam nisi sunt possimus molestiae aliquam libero, ipsum quam esse.">
+          <a href="products.html" style="text-decoration: none; color:inherit;"> 
+            <div class="card" data-id="1" data-categ= "Giay dep" data-name="Giay the thao" data-img="./images/shoe1.jpeg" data-price="100000" data-incart="0" data-desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nostrum ipsam suscipit illo. Odit facere fuga, praesentium assumenda rerum doloribus veniam nisi sunt possimus molestiae aliquam libero, ipsum quam esse.">
             <div class="card-image">
               <img src="./images/shoe1.jpeg" class="card-img-top" alt="...">
             </div>
             <div class="newproduct card-body">
               <div class="my-1 category">
                 <div class="categ-icon"><img src="./images/shoes.svg" alt=""></div>
-                <div class="categ-name ml-2">Giay dep</div>
+                <div class="categ-name ml-2">Giày dép</div>
               </div>
               <div class="my-1 product">
                 <div class="prod-icon"><img src="./images/shoes (1).svg" alt=""></div>
-                <div class="prod-name ml-2">Giay the thao</div>
+                <div class="prod-name ml-2">Giày thể thao</div>
               </div>
               <div class="my-1 priceinfo">
                 <div class="price-icon"><img src="./images/price.svg" alt=""></div>
@@ -479,10 +504,12 @@
             <div class="quickviewprd">
               <button style="width: 100%" class="viewproduct btn btn-primary px-5" type="button">XEM NHANH</button>
             </div>
-          </div>
+            </div>
+          </a>
         </div>
         <div class="col-md-3 col-12">
-          <div class="card" data-id="2" data-categ= "Tui" data-name="Tui thoi trang" data-img="./images/bag1.jpeg" data-price="100000" data-incart="0" data-desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nostrum ipsam suscipit illo. Odit facere fuga, praesentium assumenda rerum doloribus veniam nisi sunt possimus molestiae aliquam libero, ipsum quam esse.">
+          <a href="products.html" style="text-decoration: none; color:inherit;"> 
+            <div class="card" data-id="2" data-categ= "Tui" data-name="Tui thoi trang" data-img="./images/bag1.jpeg" data-price="100000" data-incart="0" data-desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nostrum ipsam suscipit illo. Odit facere fuga, praesentium assumenda rerum doloribus veniam nisi sunt possimus molestiae aliquam libero, ipsum quam esse.">
             <div class="card-image">
               <img src="./images/bag1.jpeg" class="card-img-top" alt="...">
             </div>
@@ -503,10 +530,12 @@
             <div class="quickviewprd">
               <button style="width: 100%" class="viewproduct btn btn-primary px-5" type="button">XEM NHANH</button>
             </div>
-          </div>
+            </div>
+          </a>
         </div>
         <div class="col-md-3 col-12">
-          <div class="card" data-id="3" data-categ= "Do nam" data-name="Ao phong nam" data-img="./images/shirt1.jpg" data-price="100000" data-incart="0" data-desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nostrum ipsam suscipit illo. Odit facere fuga, praesentium assumenda rerum doloribus veniam nisi sunt possimus molestiae aliquam libero, ipsum quam esse.">
+          <a href="products.html" style="text-decoration: none; color:inherit;"> 
+            <div class="card" data-id="3" data-categ= "Do nam" data-name="Ao phong nam" data-img="./images/shirt1.jpg" data-price="100000" data-incart="0" data-desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nostrum ipsam suscipit illo. Odit facere fuga, praesentium assumenda rerum doloribus veniam nisi sunt possimus molestiae aliquam libero, ipsum quam esse.">
             <div class="card-image">
               <img src="./images/shirt1.jpg" class="card-img-top" alt="...">
             </div>
@@ -527,10 +556,12 @@
             <div class="quickviewprd">
               <button style="width: 100%" class="viewproduct btn btn-primary px-5" type="button">XEM NHANH</button>
             </div>
-          </div>
+            </div>
+          </a>
         </div>
         <div class="col-md-3 col-12">
-          <div class="card" data-id="4" data-categ= "Do nu" data-name="Ao Pullover" data-img="./images/women1.jpeg" data-price="100000" data-incart="0" data-desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nostrum ipsam suscipit illo. Odit facere fuga, praesentium assumenda rerum doloribus veniam nisi sunt possimus molestiae aliquam libero, ipsum quam esse.">
+          <a href="products.html" style="text-decoration: none; color:inherit;"> 
+            <div class="card" data-id="4" data-categ= "Do nu" data-name="Ao Pullover" data-img="./images/women1.jpeg" data-price="100000" data-incart="0" data-desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nostrum ipsam suscipit illo. Odit facere fuga, praesentium assumenda rerum doloribus veniam nisi sunt possimus molestiae aliquam libero, ipsum quam esse.">
             <div class="card-image">
               <img src="./images/women1.jpeg" class="card-img-top" alt="...">
             </div>
@@ -551,10 +582,12 @@
             <div class="quickviewprd">
               <button style="width: 100%" class="viewproduct btn btn-primary px-5" type="button">XEM NHANH</button>
             </div>
-          </div>
+            </div>
+          </a>
         </div>
         <div class="col-md-3 col-12">
-          <div class="card" data-id="5" data-categ= "Do nam" data-name="Ao phong nam" data-img="./images/shirt3.jpg" data-price="100000" data-incart="0" data-desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nostrum ipsam suscipit illo. Odit facere fuga, praesentium assumenda rerum doloribus veniam nisi sunt possimus molestiae aliquam libero, ipsum quam esse.">
+          <a href="products.html" style="text-decoration: none; color:inherit;"> 
+            <div class="card" data-id="5" data-categ= "Do nam" data-name="Ao phong nam" data-img="./images/shirt3.jpg" data-price="100000" data-incart="0" data-desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nostrum ipsam suscipit illo. Odit facere fuga, praesentium assumenda rerum doloribus veniam nisi sunt possimus molestiae aliquam libero, ipsum quam esse.">
             <div class="card-image">
               <img src="./images/shirt3.jpg" class="card-img-top" alt="...">
             </div>
@@ -575,10 +608,12 @@
             <div class="quickviewprd">
               <button style="width: 100%" class="viewproduct btn btn-primary px-5" type="button">XEM NHANH</button>
             </div>
-          </div>
+            </div>
+          </a>
         </div>
         <div class="col-md-3 col-12">
-          <div class="card" data-id="6" data-categ= "Do nam" data-name="Ao phong nam" data-img="./images/shirt4.jpg" data-price="100000" data-incart="0" data-desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nostrum ipsam suscipit illo. Odit facere fuga, praesentium assumenda rerum doloribus veniam nisi sunt possimus molestiae aliquam libero, ipsum quam esse.">
+          <a href="products.html" style="text-decoration: none; color:inherit;"> 
+            <div class="card" data-id="6" data-categ= "Do nam" data-name="Ao phong nam" data-img="./images/shirt4.jpg" data-price="100000" data-incart="0" data-desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nostrum ipsam suscipit illo. Odit facere fuga, praesentium assumenda rerum doloribus veniam nisi sunt possimus molestiae aliquam libero, ipsum quam esse.">
             <div class="card-image">
               <img src="./images/shirt4.jpg" class="card-img-top" alt="...">
             </div>
@@ -599,7 +634,8 @@
             <div class="quickviewprd">
               <button style="width: 100%" class="viewproduct btn btn-primary px-5" type="button">XEM NHANH</button>
             </div>
-          </div>
+            </div>
+          </a>
         </div>
       </div>  
     </div>
@@ -630,11 +666,11 @@
             <div class="impressiveproduct card-body">
               <div class="my-1 category">
                 <div class="categ-icon"><img src="./images/shoes.svg" alt=""></div>
-                <div class="categ-name ml-2">Giay dep</div>
+                <div class="categ-name ml-2">Giày dép</div>
               </div>
               <div class="my-1 product">
                 <div class="prod-icon"><img src="./images/shoes (1).svg" alt=""></div>
-                <div class="prod-name ml-2">Giay the thao</div>
+                <div class="prod-name ml-2">Giày thể thao</div>
               </div>
               <div class="my-1 priceinfo">
                 <div class="price-icon"><img src="./images/price.svg" alt=""></div>
@@ -811,11 +847,11 @@
             <div class="allproduct card-body">
               <div class="my-1 category">
                 <div class="categ-icon"><img src="./images/shoes.svg" alt=""></div>
-                <div class="categ-name ml-2">Giay dep</div>
+                <div class="categ-name ml-2">Giày dép</div>
               </div>
               <div class="my-1 product">
                 <div class="prod-icon"><img src="./images/shoes (1).svg" alt=""></div>
-                <div class="prod-name ml-2">Giay the thao</div>
+                <div class="prod-name ml-2">Giày thể thao</div>
               </div>
               <div class="my-1 priceinfo">
                 <div class="price-icon"><img src="./images/price.svg" alt=""></div>

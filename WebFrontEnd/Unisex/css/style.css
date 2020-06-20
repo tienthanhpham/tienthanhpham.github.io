@@ -66,7 +66,8 @@ div.headerrow {
 #cartquantity {
   color: white;
   background-color: #25a825;
-  width: 2rem;
+
+  padding: 0 0.5rem;
   line-height: 2rem;
   text-align: center;
   vertical-align: middle;
@@ -251,10 +252,11 @@ div.sales {
   /* transform: translateX(-50%); */
   margin-left: -10%;
   height: 40rem;
-  width: 80%;
+  width: 60%;
   z-index: 100;
   opacity: 0;
   visibility: hidden;
+  padding: 1rem;
 }
 
 button.close {
@@ -652,10 +654,30 @@ button.prev-next-button.next {
 }
 
 @media screen and (max-width: 767px) {
+  #cartquantity {
+    color: white;
+    background-color: #25a825;
+    width: 2rem;
+    padding: 0 0.5rem;
+    line-height: 2rem;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50%;
+  }
+  .prod-selected {
+    display: none;
+  }
+
+  .prod-unselected {
+    display: none;
+  }
+  .amount {
+    width: 3rem !important;
+  }
   .account {
-    position: absolute;
+    position: fixed;
     top: 0;
-    right: 17%;
+    right: 0;
     padding: 1rem;
     margin: 0;
     display: flex;
@@ -837,7 +859,7 @@ button.prev-next-button.next {
   .best-selling .product-view-modal {
     position: fixed;
     top: 40%;
-    left: 4%;
+    left: 0;
     margin-left: -2%;
     height: 40rem;
     width: 100%;
