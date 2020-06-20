@@ -133,7 +133,7 @@ $(document).ready(function () {
                   <div class="card-img ml-auto mr-auto">
                     <img src="./images/women1.jpeg" class="card-img-top w-50 ml-auto mr-auto" alt="...">
                   </div>
-                  <div class="categ-name ml-auto mr-auto mb-3">Đồ nam nu</div>
+                  <div class="categ-name ml-auto mr-auto mb-3">Đồ nữ</div>
                 </div>
               </a>
           `;
