@@ -74,6 +74,10 @@ div.headerrow {
   border-radius: 50%;
 }
 
+.cartcontainer {
+  padding-top: 1rem;
+}
+
 .cartquickview {
   position: absolute;
   top: 100%;
