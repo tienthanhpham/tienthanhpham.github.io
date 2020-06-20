@@ -378,7 +378,7 @@ function displayCart() {
       document.querySelector(".cartcontainer").innerHTML += `
       <div style="display:flex">
         <div class="px-1 py-1">><img src="${item.img}" style="width:50px;"></div>
-        <div style="display:flex; border-bottom: 0; flex-direction: column; align-items: center; justify-content: center">
+        <div style="display:flex; border-bottom: none; flex-direction: column; align-items: center; justify-content: center">
           <div>${item.name}</div>
           <div class="price">${item.productCost}</div>
         </div>
