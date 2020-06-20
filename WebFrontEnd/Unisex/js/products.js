@@ -8,7 +8,7 @@ $(document).ready(function () {
     productList.innerHTML = "";
     productList.innerHTML += `
     <a href="#" onclick="viewProductDetail(this)" class= "bag-categ" data-categ= "Tui" style = "text-decoration: none; color: black;">
-        <div class="card ml-auto mr-auto" data-id="2" data-categ= "Tui" data-name="Tui thoi trang" data-img="./images/bag1.jpeg" data-price="100000" data-incart="0" data-desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nostrum ipsam suscipit illo. Odit facere fuga, praesentium assumenda rerum doloribus veniam nisi sunt possimus molestiae aliquam libero, ipsum quam esse.">
+        <div class="card ml-auto mr-auto" data-id="2" data-categ= "Tui" data-name="Túi thời trang" data-img="./images/bag1.jpeg" data-price="100000" data-incart="0" data-desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nostrum ipsam suscipit illo. Odit facere fuga, praesentium assumenda rerum doloribus veniam nisi sunt possimus molestiae aliquam libero, ipsum quam esse.">
           <div class="card-img ml-auto mr-auto">
             <img src="./images/bag1.jpeg" class="card-img-top w-50 ml-auto mr-auto" alt="...">
           </div>
@@ -29,7 +29,7 @@ $(document).ready(function () {
         </div>
     </a>
     <a href="#" class= "bag-categ" data-categ= "Tui" style = "text-decoration: none; color: black;">
-        <div class="card ml-auto mr-auto" data-id="22" data-categ= "Tui" data-name="Tui thoi trang" data-img="./images/bag3.jpeg" data-price="100000" data-incart="0" data-desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nostrum ipsam suscipit illo. Odit facere fuga, praesentium assumenda rerum doloribus veniam nisi sunt possimus molestiae aliquam libero, ipsum quam esse.">
+        <div class="card ml-auto mr-auto" data-id="22" data-categ= "Tui" data-name="Túi thời trang" data-img="./images/bag3.jpeg" data-price="100000" data-incart="0" data-desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nostrum ipsam suscipit illo. Odit facere fuga, praesentium assumenda rerum doloribus veniam nisi sunt possimus molestiae aliquam libero, ipsum quam esse.">
           <div class="card-img ml-auto mr-auto">
             <img src="./images/bag3.jpeg" class="card-img-top w-50 ml-auto mr-auto" alt="...">
           </div>
@@ -50,7 +50,7 @@ $(document).ready(function () {
         </div>
     </a>
     <a href="#" class= "bag-categ" data-categ= "Tui" style = "text-decoration: none; color: black;">
-        <div class="card ml-auto mr-auto" data-id="23" data-categ= "Tui" data-name="Tui thoi trang" data-img="./images/bag4.jpeg" data-price="100000" data-incart="0" data-desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nostrum ipsam suscipit illo. Odit facere fuga, praesentium assumenda rerum doloribus veniam nisi sunt possimus molestiae aliquam libero, ipsum quam esse.">
+        <div class="card ml-auto mr-auto" data-id="23" data-categ= "Tui" data-name="Túi thời trang" data-img="./images/bag4.jpeg" data-price="100000" data-incart="0" data-desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nostrum ipsam suscipit illo. Odit facere fuga, praesentium assumenda rerum doloribus veniam nisi sunt possimus molestiae aliquam libero, ipsum quam esse.">
           <div class="card-img ml-auto mr-auto">
             <img src="./images/bag4.jpeg" class="card-img-top w-50 ml-auto mr-auto" alt="...">
           </div>
@@ -219,7 +219,7 @@ function viewProductDetail(product) {
   productList.innerHTML = "";
   productList.innerHTML += `
     <a href="#" onclick="viewProductDetail(this)" class= "bag-categ" data-categ= "Tui" style = "text-decoration: none; color: black;">
-        <div class="card ml-auto mr-auto" data-id="2" data-categ= "Tui" data-name="Tui thoi trang" data-img="./images/bag1.jpeg" data-price="100000" data-incart="0" data-desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nostrum ipsam suscipit illo. Odit facere fuga, praesentium assumenda rerum doloribus veniam nisi sunt possimus molestiae aliquam libero, ipsum quam esse.">
+        <div class="card ml-auto mr-auto" data-id="2" data-categ= "Tui" data-name="Túi thời trang" data-img="./images/bag1.jpeg" data-price="100000" data-incart="0" data-desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nostrum ipsam suscipit illo. Odit facere fuga, praesentium assumenda rerum doloribus veniam nisi sunt possimus molestiae aliquam libero, ipsum quam esse.">
           <div class="card-img ml-auto mr-auto">
             <img src="./images/bag1.jpeg" class="card-img-top w-50 ml-auto mr-auto" alt="...">
           </div>
@@ -235,7 +235,7 @@ function viewProductDetail(product) {
     </a>
     <div class="product-info-detail d-flex flex-column align-items-start mt-2">
       <div class="product-desc">
-        <h2>TÚI AMELIA</h2>
+        <h2>TÚI THỜI TRANG</h2>
         <div class="border-top w-25 ml-0 mb-2" style="border: 2px solid #e1e1e1;"></div>
         <div class="my-1 priceinfo">
           <div class="price-icon d-flex flex-row justify-content-center align-items-center"><img class="mr-2" style="width: 2rem;"src="./images/price.svg" alt="">
@@ -378,7 +378,7 @@ function displayCart() {
       document.querySelector(".cartcontainer").innerHTML += `
       <div style="display:flex">
         <div class="px-1 py-1">><img src="${item.img}" style="width:50px;"></div>
-        <div style="display:flex; flex-direction: column; align-items: center; justify-content: center">
+        <div style="display:flex; border-bottom: 0; flex-direction: column; align-items: center; justify-content: center">
           <div>${item.name}</div>
           <div class="price">${item.productCost}</div>
         </div>
