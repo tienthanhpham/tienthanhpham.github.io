@@ -15,11 +15,11 @@ $(document).ready(function () {
           <div class="bestsell card-body">
               <div class="my-1 category">
                 <div class="categ-icon"><img src="./images/bag.svg" width="20rem;" alt=""></div>
-                <div class="categ-name ml-2">Tui</div>
+                <div class="categ-name ml-2">Túi</div>
               </div>
               <div class="my-1 category">
                 <div class="prod-icon"><img src="./images/bag (1).svg"  width="20rem;" alt=""></div>
-                <div class="prod-name ml-2">Tui thoi trang</div>
+                <div class="prod-name ml-2">Túi thời trang</div>
               </div>
               <div class="my-1 category">
                 <div class="price-icon"><img src="./images/price.svg"  width="20rem;" alt=""></div>
@@ -36,11 +36,11 @@ $(document).ready(function () {
           <div class="bestsell card-body">
               <div class="my-1 category">
                 <div class="categ-icon"><img src="./images/bag.svg" width="20rem;" alt=""></div>
-                <div class="categ-name ml-2">Tui</div>
+                <div class="categ-name ml-2">Túi</div>
               </div>
               <div class="my-1 category">
                 <div class="prod-icon"><img src="./images/bag (1).svg"  width="20rem;" alt=""></div>
-                <div class="prod-name ml-2">Tui thoi trang</div>
+                <div class="prod-name ml-2">Túi thời trang</div>
               </div>
               <div class="my-1 category">
                 <div class="price-icon"><img src="./images/price.svg"  width="20rem;" alt=""></div>
@@ -57,11 +57,11 @@ $(document).ready(function () {
           <div class="bestsell card-body">
               <div class="my-1 category">
                 <div class="categ-icon"><img src="./images/bag.svg" width="20rem;" alt=""></div>
-                <div class="categ-name ml-2">Tui</div>
+                <div class="categ-name ml-2">Túi</div>
               </div>
               <div class="my-1 category">
                 <div class="prod-icon"><img src="./images/bag (1).svg"  width="20rem;" alt=""></div>
-                <div class="prod-name ml-2">Tui thoi trang</div>
+                <div class="prod-name ml-2">Túi thời trang</div>
               </div>
               <div class="my-1 category">
                 <div class="price-icon"><img src="./images/price.svg"  width="20rem;" alt=""></div>
@@ -89,7 +89,7 @@ $(document).ready(function () {
               <div class="card-img ml-auto mr-auto">
                 <img src="./images/shoe1.jpeg" class="card-img-top w-50 ml-auto mr-auto" alt="...">
               </div>
-              <div class="categ-name ml-auto mr-auto mb-3">Giay dep</div>
+              <div class="categ-name ml-auto mr-auto mb-3">Giày dép</div>
             </div>
           </a>
       `;
@@ -111,7 +111,7 @@ $(document).ready(function () {
                 <div class="card-img ml-auto mr-auto">
                   <img src="./images/shirt1.jpg" class="card-img-top w-50 ml-auto mr-auto" alt="...">
                 </div>
-                <div class="categ-name ml-auto mr-auto mb-3">Do nam</div>
+                <div class="categ-name ml-auto mr-auto mb-3">Đồ nam</div>
               </div>
             </a>
         `;
@@ -133,7 +133,7 @@ $(document).ready(function () {
                   <div class="card-img ml-auto mr-auto">
                     <img src="./images/women1.jpeg" class="card-img-top w-50 ml-auto mr-auto" alt="...">
                   </div>
-                  <div class="categ-name ml-auto mr-auto mb-3">Do nu</div>
+                  <div class="categ-name ml-auto mr-auto mb-3">Đồ nam nu</div>
                 </div>
               </a>
           `;
