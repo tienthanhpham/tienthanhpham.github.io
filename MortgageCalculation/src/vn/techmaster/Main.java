@@ -15,7 +15,7 @@ public class Main {
         float monthlyRate = (float)readInput
                 ("Nhap vao lai suat: ", 0, 30,
                         "Lai suat phai tu " + 0 + " đến " + 30) / MONTHS_IN_YEAR / PERCENT;
-        int paymentPeriods = (byte)readInput
+        int paymentPeriods = (int)readInput
                 ("Nhap vao ky han: ", 0, 30,
                         "Ky han phai tu " + 0 + " đến " + 30) * MONTHS_IN_YEAR;
         double mortgage = mortgageCal(principal, monthlyRate, paymentPeriods);
