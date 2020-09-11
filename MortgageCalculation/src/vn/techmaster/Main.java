@@ -11,13 +11,13 @@ public class Main {
 
         double principal = readInput
                 ("Nhap vao so tien goc: ", 1000, 1000_000,
-                        "So tien goc phai tu 1K - 1000K");
+                        "So tien goc phai tu " + 1000 + " đến " + 1000_000);
         float monthlyRate = (float)readInput
                 ("Nhap vao lai suat: ", 0, 30,
-                        "Lai suat phai tu 0 - 30") / MONTHS_IN_YEAR / PERCENT;
+                        "Lai suat phai tu " + 0 + " đến " + 30) / MONTHS_IN_YEAR / PERCENT;
         int paymentPeriods = (byte)readInput
                 ("Nhap vao ky han: ", 0, 30,
-                        "Ky han phai tu 0 - 30") * MONTHS_IN_YEAR;
+                        "Ky han phai tu " + 0 + " đến " + 30) * MONTHS_IN_YEAR;
         double mortgage = mortgageCal(principal, monthlyRate, paymentPeriods);
         System.out.println("So tien tra hang thang:" + mortgage);
     }
