@@ -17,6 +17,9 @@ public class Main {
         var display = new Display(mortgageInstance);
         display.printMortgage();
         display.printBalance();
+        var textBox = new TextBox();
+        textBox.setText("This is a text");
+
     }
 
 
