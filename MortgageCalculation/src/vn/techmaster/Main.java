@@ -1,48 +1,22 @@
 package vn.techmaster;
 
-import java.util.Scanner;
-
 public class Main {
 
     public static void main(String[] args) {
 	// write your code here
-        final byte MONTHS_IN_YEAR = 12;
-        final byte PERCENT = 100;
-
-        double principal = readInput
+        double principal = Input.readInput
                 ("Nhap vao so tien goc: ", 1000, 1000_000,
                         "So tien goc phai tu " + 1000 + " đến " + 1000_000);
-        float monthlyRate = (float)readInput
+        float annuallyRate = (float) Input.readInput
                 ("Nhap vao lai suat: ", 0, 30,
-                        "Lai suat phai tu " + 0 + " đến " + 30) / MONTHS_IN_YEAR / PERCENT;
-        int paymentPeriods = (int)readInput
+                        "Lai suat phai tu " + 0 + " đến " + 30);
+        int years = (int) Input.readInput
                 ("Nhap vao ky han: ", 0, 30,
-                        "Ky han phai tu " + 0 + " đến " + 30) * MONTHS_IN_YEAR;
-        double mortgage = mortgageCal(principal, monthlyRate, paymentPeriods);
-        System.out.println("So tien tra hang thang:" + mortgage);
-    }
-
-    public static double readInput
-            (String message, double min, double max, String errorMessage) {
-        final byte MONTHS_IN_YEAR = 12;
-        final byte PERCENT = 100;
-
-        double value;
-        Scanner scanner = new Scanner(System.in);
-        while (true) {
-            System.out.print(message);
-            value = scanner.nextDouble();
-            if (value >= min && value <= max) {
-                return value;
-            }
-            System.out.println(errorMessage);
-        }
-    }
-
-    public static double mortgageCal(double principal, float monthlyRate, int paymentPeriods) {
-        double mortgage = principal * monthlyRate * Math.pow(1 + monthlyRate, paymentPeriods)
-                / (Math.pow(1 + monthlyRate, paymentPeriods) - 1);
-        return mortgage;
+                        "Ky han phai tu " + 0 + " đến " + 30);
+        var mortgageInstance = new MortgageCal(principal, annuallyRate, years);
+        var display = new Display(mortgageInstance);
+        display.printMortgage();
+        display.printBalance();
     }
 
 
