@@ -1,36 +1,17 @@
 package vn.techmaster;
 
-import java.util.Random;
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
 	// write your code here
-    String lotteryNumber =
-            "" + (int)(Math.random()*10) + (int)(Math.random()*10);
-    System.out.println("So Lottery: " + lotteryNumber);
-    System.out.print("Nhap vao ma so cua ticket: ");
-    Scanner input = new Scanner(System.in);
-    String number = input.nextLine();
+    var input = new Input();
 
-    char lotteryDigit1 = lotteryNumber.charAt(0);
-    char lotteryDigit2 = lotteryNumber.charAt(1);
-    char numberDigit1 = number.charAt(0);
-    char numberDigit2 = number.charAt(1);
+    var lotteryNumber = input.getLotteryNumber();
+    input.printLotteryNumber();
+    var number = input.getNumber();
 
-    if (lotteryNumber.equals(number))
-        System.out.println("Giai dac biet");
-    else if (lotteryDigit1 == numberDigit2
-            && lotteryDigit2 == numberDigit1)
-        System.out.println("Giai nhat");
-    else if (lotteryDigit1 == numberDigit1
-            || lotteryDigit1 == numberDigit2
-            || lotteryDigit2 == numberDigit1
-            || lotteryDigit2 == numberDigit2
-            )
-        System.out.println("Giai khuyen khich");
-    else
-        System.out.println("Khong co giai");
-
+    var lotteryCheck = new LotteryCheck();
+    var award = lotteryCheck.getAward(lotteryNumber, number);
+    var display = new DisplayAward();
+    display.printAward(award);
     }
 }
