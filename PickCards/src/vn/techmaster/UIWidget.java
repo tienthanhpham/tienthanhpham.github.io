@@ -1,5 +1,6 @@
 package vn.techmaster;
 
-public interface UIWidget extends Resizable {
-
+public interface UIWidget{
+    void drag();
+    void render();
 }

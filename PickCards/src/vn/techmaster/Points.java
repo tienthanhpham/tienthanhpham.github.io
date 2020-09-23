@@ -11,10 +11,12 @@ public class Points {
 
     @Override
     public boolean equals(Object obj) {
+        if (!(obj instanceof Points))
+            return false;
         Points point = (Points) obj;
-        if ((x == point.x) && (y == point.y))
-            return true;
-        return false;
+            if ((x == point.x) && (y == point.y))
+                return true;
+            return false;
     }
 
     @Override

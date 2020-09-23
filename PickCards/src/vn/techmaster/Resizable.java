@@ -1,5 +1,5 @@
 package vn.techmaster;
 
-public interface Resizable {
-    void resize();
+public interface Resizable extends UIWidget {
+    void resize(int x);
 }

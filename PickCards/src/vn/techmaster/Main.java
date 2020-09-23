@@ -17,22 +17,21 @@ public class Main {
         cardType.setCardType();
         System.out.println("Quan bai la " + cardNumber.getNumber() + " " + cardType.getCardType());
         */
-       //var textBox = new TextBox();
-       //var uiControl = new UIControl();
-       //show(uiControl);
-        var str = new Strings();
+        TaxCalculator calculator2019 = new TaxCalculator2019(100_000);
+        TaxReport report2019 = new TaxReport();
+
+        report2019.show(calculator2019);
+        System.out.println(report2019.getTax());
+
+        /*var str = new Strings();
         str.setText(new char[]{'A','B'});
         System.out.println(str.getText());
-        System.out.println(str.upperCase());
+        System.out.println(str.upperCase());*/
+
     }
 
     public static void show (UIControl uicontrol) {
-        if (uicontrol instanceof TextBox) {
-            var textBox = (TextBox) uicontrol;
-            textBox.setText("Hello");
-            }
-        System.out.println(uicontrol);
-
+        uicontrol.render();
     }
 
 }

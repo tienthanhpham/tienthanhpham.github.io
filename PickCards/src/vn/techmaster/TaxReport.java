@@ -1,14 +1,23 @@
 package vn.techmaster;
 
 public class TaxReport {
-    private TaxCalculator taxCalculator;
+    private TaxCalculator calculator;
+    private double tax;
 
-    public TaxReport() {
-        taxCalculator = new TaxCalculator(100_000);
+    public double getTax() {
+        return tax;
     }
 
-    public void show() {
-        var tax = taxCalculator.calculateTax();
-        System.out.println(tax);
+    public void setCalculator(TaxCalculator calculator) {
+        this.calculator = calculator;
+    }
+
+    public TaxReport() {
+        //this.calculator = calculator;
+    }
+
+    public double show(TaxCalculator calculator) {
+        tax = calculator.calculateTax();
+        return tax;
     }
 }
