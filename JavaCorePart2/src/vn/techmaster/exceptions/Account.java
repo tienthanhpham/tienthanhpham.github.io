@@ -9,12 +9,12 @@ public class Account {
             throw new IOException();
     }
 
-//    public void widthraw(int value) throws InsufficiendFundsException {
-//        if (value > balance)
-//            throw new InsufficiendFundsException();
-//    }
-    public void widthraw(int value) throws AccountException {
+    public void widthraw(int value) throws InsufficiendFundsException {
         if (value > balance)
-            throw new AccountException(new InsufficiendFundsException());
-        }
+            throw new InsufficiendFundsException();
     }
+//    public void widthraw(int value) throws AccountException {
+//        if (value > balance)
+//            throw new AccountException(new InsufficiendFundsException());
+//        }
+}

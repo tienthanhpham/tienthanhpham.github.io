@@ -13,10 +13,5 @@ public class ExceptionDemos2 {
             throw e;
         }
 
-        try {
-            account.widthraw(10);
-        } catch (AccountException e) {
-            System.out.println(e.getMessage());
-        }
     }
 }

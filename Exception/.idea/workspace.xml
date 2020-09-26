@@ -19,7 +19,21 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4d2da62f-4199-45b6-970c-d6f6b876e851" name="Default Changelist" comment="" />
+    <list default="true" id="4d2da62f-4199-45b6-970c-d6f6b876e851" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Interfaces/Finish/MyTube/src/geometric/Circle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Interfaces/Finish/MyTube/src/geometric/GeometricObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Interfaces/Finish/MyTube/src/geometric/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Interfaces/Finish/MyTube/src/geometric/Rectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geomectrics/geomectrics.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geomectrics/src/vn/techmaster/Circle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geomectrics/src/vn/techmaster/GeometricObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geomectrics/src/vn/techmaster/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Interfaces/out/production/Start/vn/techmaster/EmailService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Interfaces/out/production/Start/vn/techmaster/EmailService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Interfaces/out/production/Start/vn/techmaster/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Interfaces/out/production/Start/vn/techmaster/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Interfaces/out/production/Start/vn/techmaster/VideoDatabase.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Interfaces/out/production/Start/vn/techmaster/VideoDatabase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Interfaces/out/production/Start/vn/techmaster/VideoEncoder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Interfaces/out/production/Start/vn/techmaster/VideoEncoder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Interfaces/out/production/Start/vn/techmaster/VideoProcessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Interfaces/out/production/Start/vn/techmaster/VideoProcessor.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,6 +59,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
   <component name="RunManager">
@@ -129,6 +145,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="260" y="100" width="759" height="574" key="find.popup" timestamp="1600936866807">
