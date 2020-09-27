@@ -10,18 +10,42 @@ public class Gate {
     }
 
     public void enter(Ticket ticket) {
-
+        if (ticket.isValid() == true) {
+            open();
+            ticket.setOrigin(this);
+        }
+        else
+            close();
     }
 
     public void exit(Ticket ticket) {
+        Gate origin = ticket.getOrigin();
+        if (origin != null) {
+            int d = Math.abs(distance - origin.distance);
+            int fare = Line.getFare(d);
+            if (ticket.getValue() > fare) {
+                ticket.adjustValue(fare);
+                ticket.setOrigin(null);
+                ticket.setValid(false);
+                open();
+            } else {
+                System.out.println("Fare: " + fare + " & " + ticket.toString());
+                close();
+            }
+        } else
+            close();
 
     }
 
-    private void open() {
-        System.out.println("Gate opened");
+    public void open() {
+        System.out.println("Gate " + name + " is opened");
     }
 
-    private void close() {
-        System.out.println("Gate closed");
+    public void close() {
+        System.out.println("Gate " + name + " is closed");
+    }
+
+    public String getName() {
+        return name;
     }
 }

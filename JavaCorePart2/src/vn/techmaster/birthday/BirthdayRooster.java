@@ -3,7 +3,7 @@ package vn.techmaster.birthday;
 public class BirthdayRooster {
     private static String[] day = {"Saturday", "Sunday", "Monday", "Tuesday",
             "Wednesday", "Thursday", "Friday"};
-    
+
     private static Employee[] emp = { new Employee("Chu Chi Cuong",
             new Date(26,9,2020), "IT"),
             new Employee("Nguyen Xuan Phuc",
