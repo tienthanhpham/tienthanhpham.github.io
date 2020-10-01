@@ -1,8 +1,17 @@
 package vn.techmaster.highway;
 
-public class PrepaidCard extends Ticket {
+public class PrepaidCard implements Payable {
+    private Gate origin;
+    private int value;
+    private boolean valid = true;
+
     public PrepaidCard(int value) {
-        super(value);
+        this.value = value;
+    }
+
+    @Override
+    public void setValid(boolean valid) {
+
     }
 
     @Override
@@ -16,7 +25,22 @@ public class PrepaidCard extends Ticket {
     }
 
     @Override
-    public void setValid(boolean valid) {
+    public void deduct(int amount) {
+        value -= amount;
+    }
 
+    @Override
+    public void setOrigin(Gate origin) {
+        this.origin = origin;
+    }
+
+    @Override
+    public Gate getOrigin() {
+        return origin;
+    }
+
+    @Override
+    public int getValue() {
+        return value;
     }
 }

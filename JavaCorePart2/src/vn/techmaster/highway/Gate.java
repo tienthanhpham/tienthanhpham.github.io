@@ -11,7 +11,7 @@ public class Gate {
         this.distance = distance;
     }
 
-    public void enter(Ticket ticket) {
+    public void enter(Payable ticket) {
         if (ticket.isValid() == true) {
             ticket.setOrigin(this);
             open();
@@ -20,7 +20,7 @@ public class Gate {
             close();
     }
 
-    public void exit(Ticket ticket) {
+    public void exit(Payable ticket) {
         if(ticket.isValid() == true) {
             dis = this.distance - ticket.getOrigin().distance;
             fare = Line.getFare(dis);
@@ -49,5 +49,9 @@ public class Gate {
     public String toString() {
         return "Distance: " + dis + "\n" +
                 "Fare: " + fare;
+    }
+
+    public String getName() {
+        return name;
     }
 }
