@@ -1,8 +1,8 @@
 package vn.techmaster.sohoc;
 
 public class RationalNumber extends ComparableNumber<RationalNumber> {
-    private int tuso;
-    private int mauso;
+    private final int tuso;
+    private final int mauso;
 
     public RationalNumber(int tuso, int mauso) {
         if (mauso == 0)
