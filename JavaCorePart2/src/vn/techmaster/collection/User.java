@@ -1,14 +1,31 @@
 package vn.techmaster.collection;
 
-public class User {
-    private String userName;
+public class User implements Comparable<User> {
+    private String name;
+    private int point;
+    private int height;
 
-    public User(String userName) {
-        this.userName = userName;
+    public User(String name, int point, int height) {
+        this.name = name;
+        this.point = point;
+        this.height = height;
+    }
+
+    @Override
+    public int compareTo(User o) {
+        return this.point - o.point;
     }
 
     @Override
     public String toString() {
-        return userName;
+        return name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getHeight() {
+        return height;
     }
 }

@@ -34,7 +34,7 @@ public class RationalNumber extends ComparableNumber<RationalNumber> {
 
     @Override
     public double doubleValue() {
-        return (double) numerator / denominator;
+        return (numerator / denominator * 1.0);
     }
 
     @Override

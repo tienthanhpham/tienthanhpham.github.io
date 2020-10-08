@@ -8,9 +8,9 @@ public abstract class ComparableNumber<T>
     @Override
     public int compareTo(ComparableNumber<?> o) {
         if (this.doubleValue() < o.doubleValue())
-            return -1;
-        if (this.doubleValue() > o.doubleValue())
             return 1;
+        if (this.doubleValue() > o.doubleValue())
+            return -1;
         return 0;
     }
 }
