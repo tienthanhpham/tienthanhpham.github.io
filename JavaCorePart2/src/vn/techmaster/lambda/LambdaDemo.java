@@ -13,7 +13,7 @@ public class LambdaDemo {
     }
 
     public static void greet() {
-
+        Printer printer = str -> System.out.println(str);
     }
     public static void display(Printer printer) {
         printer.print("Hello");
