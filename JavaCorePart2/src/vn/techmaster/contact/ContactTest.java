@@ -7,13 +7,14 @@ public class ContactTest {
         book1.add(new Person("Giang", 22, 'F'));
         book1.add(new Person("Quan", 21, 'M'));
 
-        var book3 = new AddressBookV3(3);
-        book3.add(new Person("Phuc", 20, 'M'));
-        book3.add(new Person("Giang", 22, 'F'));
-        book3.add(new Person("Quan", 21, 'M'));
+        var book2 = new AddressBookV2(3);
+        book2.add(new Person("Phuc", 20, 'M'));
+        book2.add(new Person("Giang", 22, 'F'));
+        book2.add(new Person("Quan", 21, 'M'));
 
-        var list = book3.sort(1);
-        System.out.println(list);
+        var list2 = book2.sort(1);
+        var list1 = book1.sort();
+        System.out.println(list2);
 
     }
 }

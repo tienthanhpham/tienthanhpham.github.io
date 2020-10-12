@@ -26,8 +26,11 @@ public class AddressBookV1 implements AddressBook<Person> {
 
     @Override
     public List<Person> sort(int compareAttribute) {
-        for (var item : list)
-            item.setCompareAttribute(compareAttribute);
+        return null;
+    }
+
+    @Override
+    public List<Person> sort() {
         Collections.sort(list);
         return list;
     }

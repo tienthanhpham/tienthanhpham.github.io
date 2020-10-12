@@ -3,8 +3,8 @@ package vn.techmaster.contact;
 public class Person implements Comparable<Person> {
     private String name;
     private int age;
-    private char gender;//M or F
-    private int compareAttribute; //0 -- Name; 1 -- Age
+    private char gender;
+    private int compareAttribute = 0;
 
     public Person(String name, int age, char gender) {
         this.name = name;

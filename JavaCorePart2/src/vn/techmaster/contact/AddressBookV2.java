@@ -23,8 +23,13 @@ public class AddressBookV2 implements AddressBook<Person> {
     @Override
     public List<Person> sort(int compareAttribute) {
         var sorted = new ArrayList<>(map.values());
-        Collections.sort(sorted);
+        Collections.sort(sorted, getComparator(compareAttribute));
         return sorted;
+    }
+
+    @Override
+    public List<Person> sort() {
+        return null;
     }
 
     private Comparator getComparator(int compareAttribute) {

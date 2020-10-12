@@ -29,6 +29,11 @@ public class AddressBookV3 implements AddressBook<Person> {
     }
 
     @Override
+    public List<Person> sort() {
+        return null;
+    }
+
+    @Override
     public int compareTo(Person o) {
         return 0;
     }
