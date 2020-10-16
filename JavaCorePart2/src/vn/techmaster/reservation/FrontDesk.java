@@ -35,11 +35,11 @@ public class FrontDesk {
                 "012032595", "Techmaster", "0988565830",
                 "037079001195", 500, true);
 
-        var isLogined = member.login();
-        if (isLogined) {
+        var isLogged = member.login();
+        if (isLogged) {
             var reservation = member.booking(Hotel.getRooms().get(0), 2,
                     new Date(2020, 10, 15),
-                    new Date(2020, 10, 17), 600);
+                    new Date(2020, 10, 25), 100);
 
             Reservation.addReservation(reservation);
         }

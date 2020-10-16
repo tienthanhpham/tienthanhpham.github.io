@@ -56,7 +56,7 @@ public class Member extends User {
 
         if (room.isAvailable() == true &&
                 (room.getStartDate().compareTo(startDate) >= 0) &&
-                (room.getEndDate().compareTo(endDate) <= 0)
+                (room.getEndDate().compareTo(endDate) >= 0)
         ) {
             setPersonNumber(personNumber);
             setStartDate(startDate);

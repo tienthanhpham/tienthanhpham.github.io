@@ -1,6 +1,5 @@
 package vn.techmaster.reservation;
 
-import java.util.List;
 
 public class User {
     private String name;
