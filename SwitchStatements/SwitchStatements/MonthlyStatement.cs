@@ -1,6 +1,6 @@
 using System;
 
-namespace CleanCode.SwitchStatements
+namespace SwitchStatements
 {
     public class MonthlyStatement
     {

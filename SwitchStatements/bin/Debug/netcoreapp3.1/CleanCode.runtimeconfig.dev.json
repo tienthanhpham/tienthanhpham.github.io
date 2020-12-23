@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "/Users/h-sierra/.dotnet/store/|arch|/|tfm|",
+      "/Users/h-sierra/.nuget/packages"
+    ]
+  }
+}

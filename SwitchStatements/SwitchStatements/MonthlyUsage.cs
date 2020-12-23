@@ -1,4 +1,4 @@
-﻿namespace CleanCode.SwitchStatements
+﻿namespace SwitchStatements
 {
     public class MonthlyUsage
     {
